@@ -9,16 +9,22 @@
             >
                 <CarouselSlide :index="0" :visibleSlide="visibleSlide" :direction="direction">
                     <img
-                        src="/assets/images/showcase/gallary/mobile-tyre-fitting-1.webp"
+                        src="/assets/images/showcase/gallary/mobile-tyre-fitting-1-300.webp"
                         srcset="/assets/images/showcase/gallary/mobile-tyre-fitting-1.webp 1080w,
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-1-500.webp 500w,
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-1-300.webp 300w"
                         class="object-cover object-center w-full h-full brightness-[0.6]"
-                        sizes="(min-width: 1536px) 1280px, (min-width: 1280px) 1152px, (min-width: 1024px) 896px, 100vw"
+                        sizes="(min-width: 1536px) 924px,
+                               (min-width: 1280px) 798px,
+                               (min-width: 1024px) 624px,
+                               (min-width: 768px) 458px,
+                               (min-width: 640px) 200px,
+                               200px"
                         alt="Tyres Anywhere LTD Mobile Tyres Van"
                     >
                     <div class="absolute left-[15%] right-[15%] xl:top-24 xl:translate-y-0 top-1/2 -translate-y-1/2 pt-5 pb-5 text-white text-center">
-                        <h1 class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">We Come To You!</h1>
+                        <h1 v-if="!location" class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">We Come To You!</h1>
+                        <h1 v-else class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Fitting in {{location}}</h1>
                         <p class="sm:text-sm text-xs text-center">Our mobile tyre fitting service is your convenient solution</p>
                     </div>
                 </CarouselSlide>
@@ -29,12 +35,18 @@
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-2-500.webp 500w,
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-2-300.webp 300w"
                         class="object-cover object-center w-full h-full brightness-[0.6]"
-                        sizes="(min-width: 1536px) 1280px, (min-width: 1280px) 1152px, (min-width: 1024px) 896px, 100vw"
+                        sizes="(min-width: 1536px) 924px,
+                               (min-width: 1280px) 798px,
+                               (min-width: 1024px) 624px,
+                               (min-width: 768px) 458px,
+                               (min-width: 640px) 560px,
+                               100vw"
                         alt="Mobile Tyre Fitting"
+                        loading="lazy"
                     >
                     <div class="absolute left-[15%] right-[15%] xl:top-24 xl:translate-y-0 top-1/2 -translate-y-1/2 pt-5 pb-5 text-white text-center">
-                        <h1 v-if="!location" class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Fitting</h1>
-                        <h1 v-else class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Fitting in {{location}}</h1>
+                        <h2 v-if="!location" class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Fitting</h2>
+                        <h2 v-else class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">We Come To You!</h2>
                         <p class="sm:text-sm text-xs text-center">Same day service for emergencies & non-emergencies.</p>
                     </div>
                 </CarouselSlide>
@@ -45,12 +57,18 @@
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-3-500.webp 500w,
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-3-300.webp 300w"
                         alt="Mobile tyre puncture repair"
-                        sizes="(min-width: 1536px) 1280px, (min-width: 1280px) 1152px, (min-width: 1024px) 896px, 100vw"
+                        sizes="(min-width: 1536px) 924px,
+                               (min-width: 1280px) 798px,
+                               (min-width: 1024px) 624px,
+                               (min-width: 768px) 458px,
+                               (min-width: 640px) 560px,
+                               100vw"
                         class="object-cover object-center w-full h-full brightness-[0.6]"
+                        loading="lazy"
                     >
                     <div class="absolute left-[15%] right-[15%] xl:top-24 xl:translate-y-0 top-1/2 -translate-y-1/2 pt-5 pb-5 text-white text-center">
-                        <h1 v-if="!location" class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">30-60 Minute Response</h1>
-                        <h1 v-else class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Repair in {{location}}</h1>
+                        <h2 v-if="!location" class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">30-60 Minute Response</h2>
+                        <h2 v-else class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Repair in {{location}}</h2>
                         <p class="sm:text-sm text-xs text-center">Maximum 30-60 minute response for emergencies.</p>
                     </div>
                 </CarouselSlide>
@@ -61,11 +79,17 @@
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-4-500.webp 500w,
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-4-300.webp 300w"
                         class="object-cover object-center w-full h-full brightness-[0.6]"
-                        sizes="(min-width: 1536px) 1280px, (min-width: 1280px) 1152px, (min-width: 1024px) 896px, 100vw"
+                        sizes="(min-width: 1536px) 924px,
+                               (min-width: 1280px) 798px,
+                               (min-width: 1024px) 624px,
+                               (min-width: 768px) 458px,
+                               (min-width: 640px) 560px,
+                               100vw"
                         alt="Tyres Anywhere LTD Mobile Tyres Van"
+                        loading="lazy"
                     >
                     <div class="absolute left-[15%] right-[15%] xl:top-24 xl:translate-y-0 top-1/2 -translate-y-1/2 pt-5 pb-5 text-white text-center">
-                        <h1 class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">We Come To You!</h1>
+                        <h2 class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">We Come To You!</h2>
                         <p class="sm:text-sm text-xs text-center">Our mobile tyre fitting service is your convenient solution</p>
                     </div>
                 </CarouselSlide>
@@ -76,12 +100,18 @@
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-5-500.webp 500w,
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-5-300.webp 300w"
                         class="object-cover object-center w-full h-full brightness-[0.6]"
-                        sizes="(min-width: 1536px) 1280px, (min-width: 1280px) 1152px, (min-width: 1024px) 896px, 100vw"
+                        sizes="(min-width: 1536px) 924px,
+                               (min-width: 1280px) 798px,
+                               (min-width: 1024px) 624px,
+                               (min-width: 768px) 458px,
+                               (min-width: 640px) 560px,
+                               100vw"
                         alt="Mobile Tyre Fitting"
+                        loading="lazy"
                     >
                     <div class="absolute left-[15%] right-[15%] xl:top-24 xl:translate-y-0 top-1/2 -translate-y-1/2 pt-5 pb-5 text-white text-center">
-                        <h1 v-if="!location" class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Fitting</h1>
-                        <h1 v-else class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Fitting in {{location}}</h1>
+                        <h2 v-if="!location" class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Fitting</h2>
+                        <h2 v-else class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Fitting in {{location}}</h2>
                         <p class="sm:text-sm text-xs text-center">Same day service for emergencies & non-emergencies.</p>
                     </div>
                 </CarouselSlide>
@@ -92,12 +122,18 @@
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-6-500.webp 500w,
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-6-300.webp 300w"
                         alt="Mobile tyre puncture repair"
-                        sizes="(min-width: 1536px) 1280px, (min-width: 1280px) 1152px, (min-width: 1024px) 896px, 100vw"
+                        sizes="(min-width: 1536px) 924px,
+                               (min-width: 1280px) 798px,
+                               (min-width: 1024px) 624px,
+                               (min-width: 768px) 458px,
+                               (min-width: 640px) 560px,
+                               100vw"
                         class="object-cover object-center w-full h-full brightness-[0.6]"
+                        loading="lazy"
                     >
                     <div class="absolute left-[15%] right-[15%] xl:top-24 xl:translate-y-0 top-1/2 -translate-y-1/2 pt-5 pb-5 text-white text-center">
-                        <h1 v-if="!location" class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">30-60 Minute Response</h1>
-                        <h1 v-else class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Repair in {{location}}</h1>
+                        <h2 v-if="!location" class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">30-60 Minute Response</h2>
+                        <h2 v-else class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Repair in {{location}}</h2>
                         <p class="sm:text-sm text-xs text-center">Maximum 30-60 minute response for emergencies.</p>
                     </div>
                 </CarouselSlide>
@@ -108,11 +144,17 @@
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-7-500.webp 500w,
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-7-300.webp 300w"
                         class="object-cover object-center w-full h-full brightness-[0.6]"
-                        sizes="(min-width: 1536px) 1280px, (min-width: 1280px) 1152px, (min-width: 1024px) 896px, 100vw"
+                        sizes="(min-width: 1536px) 924px,
+                               (min-width: 1280px) 798px,
+                               (min-width: 1024px) 624px,
+                               (min-width: 768px) 458px,
+                               (min-width: 640px) 560px,
+                               100vw"
                         alt="Tyres Anywhere LTD Mobile Tyres Van"
+                        loading="lazy"
                     >
                     <div class="absolute left-[15%] right-[15%] xl:top-24 xl:translate-y-0 top-1/2 -translate-y-1/2 pt-5 pb-5 text-white text-center">
-                        <h1 class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">We Come To You!</h1>
+                        <h2 class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">We Come To You!</h2>
                         <p class="sm:text-sm text-xs text-center">Our mobile tyre fitting service is your convenient solution</p>
                     </div>
                 </CarouselSlide>
@@ -123,12 +165,18 @@
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-8-500.webp 500w,
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-8-300.webp 300w"
                         class="object-cover object-center w-full h-full brightness-[0.6]"
-                        sizes="(min-width: 1536px) 1280px, (min-width: 1280px) 1152px, (min-width: 1024px) 896px, 100vw"
+                        sizes="(min-width: 1536px) 924px,
+                               (min-width: 1280px) 798px,
+                               (min-width: 1024px) 624px,
+                               (min-width: 768px) 458px,
+                               (min-width: 640px) 560px,
+                               100vw"
                         alt="Mobile Tyre Fitting"
+                        loading="lazy"
                     >
                     <div class="absolute left-[15%] right-[15%] xl:top-24 xl:translate-y-0 top-1/2 -translate-y-1/2 pt-5 pb-5 text-white text-center">
-                        <h1 v-if="!location" class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Fitting</h1>
-                        <h1 v-else class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Fitting in {{location}}</h1>
+                        <h2 v-if="!location" class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Fitting</h2>
+                        <h2 v-else class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Fitting in {{location}}</h2>
                         <p class="sm:text-sm text-xs text-center">Same day service for emergencies & non-emergencies.</p>
                     </div>
                 </CarouselSlide>
@@ -139,12 +187,18 @@
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-9-500.webp 500w,
                                     /assets/images/showcase/gallary/mobile-tyre-fitting-9-300.webp 300w"
                         alt="Mobile tyre puncture repair"
-                        sizes="(min-width: 1536px) 1280px, (min-width: 1280px) 1152px, (min-width: 1024px) 896px, 100vw"
+                        sizes="(min-width: 1536px) 924px,
+                               (min-width: 1280px) 798px,
+                               (min-width: 1024px) 624px,
+                               (min-width: 768px) 458px,
+                               (min-width: 640px) 560px,
+                               100vw"
                         class="object-cover object-center w-full h-full brightness-[0.6]"
+                        loading="lazy"
                     >
                     <div class="absolute left-[15%] right-[15%] xl:top-24 xl:translate-y-0 top-1/2 -translate-y-1/2 pt-5 pb-5 text-white text-center">
-                        <h1 v-if="!location" class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">30-60 Minute Response</h1>
-                        <h1 v-else class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Repair in {{location}}</h1>
+                        <h2 v-if="!location" class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">30-60 Minute Response</h2>
+                        <h2 v-else class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Repair in {{location}}</h2>
                         <p class="sm:text-sm text-xs text-center">Maximum 30-60 minute response for emergencies.</p>
                     </div>
                 </CarouselSlide>

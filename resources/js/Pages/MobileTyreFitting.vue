@@ -1,9 +1,15 @@
 <template>
     <Head>
-        <title>Mobile Tyre Fitting | Van & Car Mobile Tyres | Tyres Anywhere</title>
-        <meta name="description" content="TyresAnywhere provides convenient mobile tyre fitting and will fit your tyres at home, work, roadside or even motorways!">
-        <meta name="keywords" content="mobile tyre fitting, mobile tyre service, tyre fitted at home, emergency tyre service, emergency tyre fitting, roadside tyre fitter, roadside tyre service, tyre fitted at work, mobile tyre puncture repair, tyre puncture repair">
+        <title>Emergency Mobile Tyre Fitting for Car & Van | Tyres Anywhere</title>
+        <meta name="description" content="Fast, reliable emergency mobile tyre fitting. Available 24/7 for repairs or replacements at your location. Get back on the road quickly — book now!">
         <link rel="canonical" href="https://tyresanywhere.co.uk/mobile-tyre-fitting">
+
+        <meta property="og:title" content="Emergency Mobile Tyre Fitting for Car & Van" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tyresanywhere.co.uk/mobile-tyre-fitting" />
+        <meta property="og:image" content="https://tyresanywhere.co.uk/assets/images/showcase/gallary/mobile-tyre-fitting-1.webp" />
+        <meta property="og:description" content="Fast, reliable emergency mobile tyre fitting. Available 24/7 for repairs or replacements at your location. Get back on the road quickly — book now!" />
+        <meta property="og:site_name" content="Tyres Anywhere" />
     </Head>
 
     <Container>
@@ -29,126 +35,216 @@
                 <SearchTyre />
             </div>
         </div>
-        <OurServices />
     </Container>
 
     <Container>
         <Content>
             <div class="xl:px-11 sm:px-8 px-4">
-                <h1 class="font-montserrat font-extrabold md:text-4xl sm:text-2xl text-xl mb-2 uppercase">Mobile Tyre Fitting Service</h1>
-                <h2 class="md:text-xl sm:text-lg text-base mb-10">Your brand new tyre fitted safely at your desired location.</h2>
+                <h2 class="font-montserrat font-extrabold md:text-4xl sm:text-2xl text-xl mb-2 uppercase">Mobile Tyre Fitting Service</h2>
+                <h2 class="md:text-xl sm:text-lg text-base mb-10">Are you looking for emergency mobile tyre fitting for your vehicle?</h2>
 
-                <div class="md:grid grid-cols-12 gap-y-12 lg:gap-x-4 md:gap-x-8 md:space-y-0 space-y-12 md:mt-8 mt-4">
+                <div class="lg:grid grid-cols-12 gap-y-12 xl:gap-x-4 lg:gap-x-8 lg:space-y-0 sm:space-y-12 space-y-6 lg:mt-8 mt-4 sm:text-base text-sm">
+                    <div class="col-span-5 lg:p-4">
+                        <img
+                            class="w-full object-cover"
+                            src="/assets/images/pages/mobile-tyre-fitting/mobile-tyre-fitting-van-375.webp"
+                            srcset="/assets/images/pages/mobile-tyre-fitting/mobile-tyre-fitting-van.webp 640w,
+                                    /assets/images/pages/mobile-tyre-fitting/mobile-tyre-fitting-van-500.webp 500w,
+                                    /assets/images/pages/mobile-tyre-fitting/mobile-tyre-fitting-van-375.webp 375w"
+                            sizes="(max-width: 600px) 375px, (max-width: 768px) 500px, (max-width: 1024px) 640px, 500px"
+                            alt="Our emergency services van"
+                        >
+                    </div>
+                    <div class="col-span-7 lg:p-4 space-y-3">
+                        <h3 class="sm:text-2xl text-xl font-semibold">Why mobile tyre fitting?</h3>
+                        <p>
+                            Do you need to install a new set of tyres but unable to visit a garage?
+                        </p>
+                        <p>
+                            If yes then look no further. At Tyres Anywhere, we strive to provide safe and reliable
+                            emergency mobile tyre services whether that is to repair your punctured tyre or to fit a new tyre.
+                            We offer quality and affordable <b>mobile tyre fitting</b> nationwide, and stock a wide range of tyre sizes so we are always able to help.
+                        </p>
+                        <p>
+                            Our mobile tyre technicians are fully equipped with the latest knowledge and machinery to conduct prompt mobile tyre services, even in situations of urgency.
+                            We are open 24 hours a day, 7 days a week so we are always able to assist when you need us the most.
+                        </p>
+                    </div>
+
+                    <!--                    Why choose Tyres Anywhere for your tyre needs?-->
                     <div class="col-span-12 lg:p-4">
-                        <h2 class="lg:text-3xl text-2xl font-semibold">Do you have a damaged tyre?</h2>
-                        <br>
-                        <p class="text-sm">
-                            Damages or punctures on the sidewall of your tyre cannot be repaired - you will have to get a replacement tyre.
-                        </p>
-                        <br>
-                        <p class="text-sm">
-                            This is because the internal structure of the tyre will most likely become damaged due to the damage or puncture that is on the sidewall.
-                        </p>
-                        <br>
-                        <p class="text-sm flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                                <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Need mobile tyre services ASAP?, please call us on <a class="text-blue-600 underline" href="tel:07442980101">07442 980101</a> for a prompt service</span>
-                        </p>
-                        <br>
-                        <p class="text-sm">For emergency or non-emergency situations, our mobile tyre fitting service is a more convenient solution for your requirement.</p>
+                        <h3 class="sm:text-2xl text-xl font-semibold">Why choose Tyres Anywhere for your tyre needs?</h3>
+
+                        <div class="flex flex-col space-y-4 mt-6">
+                            <div class="flex space-x-2.5">
+                                <svg class="w-5 h-5 fill-secondary-500 shrink-0" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.41 0l-.69.72-2.78 2.78-.81-.78-.72-.72-1.41 1.41.72.72 1.5 1.5.69.72.72-.72 3.5-3.5.72-.72-1.44-1.41z" transform="translate(0 1)"></path>
+                                </svg>
+                                <p>
+                                    <span class="font-medium">24/7 Availability:</span> No matter the time, day or night, our mobile tyre fitters are ready to assist you.
+                                    Whether you’re in a hurry or stranded in the middle of nowhere, we ensure a rapid response to get you back on the road.
+                                </p>
+                            </div>
+                            <div class="flex space-x-2.5">
+                                <svg class="w-5 h-5 fill-secondary-500 shrink-0" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.41 0l-.69.72-2.78 2.78-.81-.78-.72-.72-1.41 1.41.72.72 1.5 1.5.69.72.72-.72 3.5-3.5.72-.72-1.44-1.41z" transform="translate(0 1)"></path>
+                                </svg>
+                                <p>
+                                    <span class="font-medium">Fast Response Times:</span> Our experienced tyre technicians can reach most locations within an hour.
+                                    We understand the urgency of your situation and prioritize emergencies to minimize downtime.
+                                </p>
+                            </div>
+                            <div class="flex space-x-2.5">
+                                <svg class="w-5 h-5 fill-secondary-500 shrink-0" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.41 0l-.69.72-2.78 2.78-.81-.78-.72-.72-1.41 1.41.72.72 1.5 1.5.69.72.72-.72 3.5-3.5.72-.72-1.44-1.41z" transform="translate(0 1)"></path>
+                                </svg>
+                                <p>
+                                    <span class="font-medium">On-the-Spot Tyre Fitting:</span> Our vans are equipped with the latest technology and tools, enabling us to replace or repair your tyre on the spot.
+                                    No need for towing or long wait times – we’ll come directly to you and handle everything efficiently.
+                                </p>
+                            </div>
+                            <div class="flex space-x-2.5">
+                                <svg class="w-5 h-5 fill-secondary-500 shrink-0" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.41 0l-.69.72-2.78 2.78-.81-.78-.72-.72-1.41 1.41.72.72 1.5 1.5.69.72.72-.72 3.5-3.5.72-.72-1.44-1.41z" transform="translate(0 1)"></path>
+                                </svg>
+                                <p>
+                                    <span class="font-medium">Competitive Prices:</span> We offer affordable and transparent pricing for all emergency mobile tyre fitting services, ensuring no hidden costs.
+                                    You’ll know exactly what you’re paying for before we start.
+                                </p>
+                            </div>
+                            <div class="flex space-x-2.5">
+                                <svg class="w-5 h-5 fill-secondary-500 shrink-0" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.41 0l-.69.72-2.78 2.78-.81-.78-.72-.72-1.41 1.41.72.72 1.5 1.5.69.72.72-.72 3.5-3.5.72-.72-1.44-1.41z" transform="translate(0 1)"></path>
+                                </svg>
+                                <p>
+                                    <span class="font-medium">Wide Range of Tyres:</span> Whether you need premium brands, mid-range, or budget tyres, we carry a wide selection to suit your vehicle and needs.
+                                    From car tyres to van tyres, we’ve got it all.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-span-6 lg:p-4">
-                        <h2 class="lg:text-3xl text-2xl font-semibold">How to use our service</h2>
-                        <br>
-                        <p class="text-sm">
-                            Our mobile tyre fitting service operates 24/7 and we bring our service to you, whether your parked in your driveway,
-                            at work or stuck on the roadside. Our experienced tyre fitters are one fingertip away from heading to your desired location
+
+                    <div class="col-span-7 lg:p-4 space-y-3">
+                        <h3 class="sm:text-2xl text-xl font-semibold">24 Hour Assistance</h3>
+                        <p>
+                            Our powerful 24 hour service means that there is always a solution for your tyre problems - <span class="font-semibold">no matter when or where</span>.
                         </p>
-                        <br>
-                        <p class="text-sm flex items-center">
+                        <p>
+                            Whether it's a flat tyre in the middle of the night, a blowout during your commute or a puncture in a remote area, we are always ready to assist.
+                            Our team of experienced mobile tyre technicians is on standby around the clock, ensuring you always have access to fast and reliable service at any hour
+                            of the day or night.
+                        </p>
+                        <p>
+                            This is what makes our service truly unique. <span class="font-semibold">Your safety is our top priority</span>, and our emergency mobile tyre services are designed to ensure just that.
+                            We don't just assist when you're stranded on the road; we also help keep traffic flowing smoothly by resolving tyre issues quickly and efficiently,
+                            minimizing disruptions.
+                        </p>
+                    </div>
+                    <div class="col-span-5 lg:p-4">
+                        <img
+                            class="w-full"
+                            src="/assets/images/pages/mobile-tyre-fitting/24-hour-assistance.webp"
+                            alt="Our emergency services van"
+                        >
+                    </div>
+
+                    <!--                    Book an appointment for mobile tyre fitting today-->
+                    <div class="col-span-12 lg:p-4 space-y-4">
+                        <h3 class="sm:text-2xl text-xl font-semibold">Book an appointment for mobile tyre fitting today</h3>
+                        <p>
+                            Experiencing a flat tyre can be incredibly frustrating, and we understand how it can disrupt your day. Not only does it consume valuable time,
+                            but it can also create a major hassle when you’re already on a tight schedule, possibly making you late for work or other important commitments.
+                        </p>
+                        <p>
+                            That’s why we've designed our booking system to be as straightforward as possible, giving you peace of mind when you need it most.
+                            With just a few clicks or a quick call, you can book our emergency mobile tyre fitting service,
+                            and we’ll handle the rest – getting you back on the road quickly and hassle-free.
+                        </p>
+
+                        <ol class="list-decimal pl-5 space-y-1">
+                            <li>
+                                <span class="font-medium">Use our tools above:</span>
+                                Enter your full tyre size and your postcode to search our inventory for your tyres
+                            </li>
+                            <li>
+                                <span class="font-medium">Choose your tyres:</span>
+                                Find the right tyres for your vehicle and add to your cart
+                            </li>
+                            <li>
+                                <span class="font-medium">Checkout:</span>
+                                Head to your cart. You will be prompted to choose a timeslot for the fitting
+                            </li>
+                            <li>
+                                <span class="font-medium">Our mobile tyre technicians will come to you</span>
+                                at your desired location and fit your tyres.
+                            </li>
+                        </ol>
+
+                        <p>
+                            Alternatively, you can also book an appointment with us on the phone. This is highly recommended for emergencies and tyre repairs.
+                        </p>
+
+                        <p class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
                                 <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
                             </svg>
                             <span>Need mobile tyre services ASAP?, please call us on <a class="text-blue-600 underline" href="tel:07442980101">07442 980101</a></span>
                         </p>
-                        <br>
-                        <p class="text-sm">For emergency or non-emergency situations, our mobile tyre fitting service is a more convenient solution for your requirement.</p>
                     </div>
-                    <div class="col-span-6 lg:p-4">
-                        <h2 class="lg:text-3xl text-2xl font-semibold mb-2">Emergency Mobile Tyre Fitting</h2>
-                        <br>
-                        <p class="text-sm">
-                            If you need a new tyre within minutes, look no further
+
+<!--                    What can I expect on the day of the tyre fitting?-->
+                    <div class="col-span-12 lg:p-4 space-y-4">
+                        <h3 class="sm:text-2xl text-xl font-semibold">What can I expect on the day of the tyre fitting?</h3>
+                        <p>
+                            When you book a mobile tyre fitting with us, we aim to make the process as smooth and convenient as possible. Here’s what you can expect on the day:
                         </p>
-                        <br>
-                        <p class="text-sm">
-                            A punctured tyre on the middle of a motorway or road can leave you with a massive headache and waste a large portion of your day,
-                            preventing you from getting to where you need to be.
-                        </p>
-                        <br>
-                        <p class="text-sm">
-                            We aim to fit you a new tyre as soon as possible so you can be back on the road quicker and safer.
-                        </p>
-                        <br>
-                        <p class="text-sm flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                                <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Need mobile tyre services ASAP?, please call us on <a class="text-blue-600 underline" href="tel:07442980101">07442 980101</a></span>
-                        </p>
-                        <br>
-                        <p class="text-sm">Before you call, have ready your:</p>
-                        <ul class="text-sm list-disc pl-5 mt-2">
-                            <li>Tyre size</li>
-                            <li>Exact location, or send us your live location via WhatsApp / Waze / Google Maps.</li>
-                        </ul>
+
+                        <ol class="list-decimal pl-5 space-y-3">
+                            <li>
+                                <span class="font-medium">Confirmation of Appointment:</span>
+                                You’ll receive a confirmation message or call with the technician’s expected arrival time. If there are any delays, you’ll be notified promptly.
+                            </li>
+                            <li>
+                                <span class="font-medium">Arrival of the Technician:</span>
+                                Our mobile technician will arrive at your chosen location (home, work, or roadside) with all the necessary tools to repair or replace your tyre.
+                            </li>
+                            <li>
+                                <span class="font-medium">Assessment of the Tyre:</span>
+                                The technician will inspect your tyre to determine if it can be repaired or needs replacement, following safety guidelines.
+                            </li>
+                            <li>
+                                <span class="font-medium">Professional Tyre Fitting or Repair:</span>
+                                If repairable, it will be done on the spot. If replacement is needed, we’ll fit and balance the new tyre.
+                                We carry a variety of tyre brands to suit your vehicle.
+                            </li>
+                            <li>
+                                <span class="font-medium">Post-Service Check:</span>
+                                The technician will check the fitting and balance, and provide maintenance tips and answer any questions.
+                            </li>
+                            <li>
+                                <span class="font-medium">Payment and Invoice:</span>
+                                Pay on the spot using your preferred method. We’ll provide an invoice and necessary documents.
+                            </li>
+                            <li>
+                                <span class="font-medium">Back on the Road:</span>
+                                After the fitting, you’ll be ready to get back on the road with complete peace of mind, knowing that your tyres are safe and in top condition.
+                            </li>
+                        </ol>
                     </div>
-                    <div class="col-span-6 lg:p-4">
-                        <h2 class="lg:text-3xl text-2xl font-semibold">Non-emergency Mobile Tyre Fitting</h2>
-                        <br>
-                        <p class="text-sm">You and your vehicle's safety is our top priority at <b>Tyres Anywhere</b>.</p>
-                        <br>
-                        <p class="text-sm">
-                            If your vehicle is sitting on your driveway with worn or damaged tyres,
-                            it is incredibly dangerous to drive as it increases a risk of an accident to occur, not even mentioning that it's illegal.
-                        </p>
-                        <br>
-                        <p class="text-sm">
-                            We provide our mobile tyre fitting service so you can have new tyres of your choice safely fitted on the same day of your call.
-                        </p>
-                        <br>
-                        <p class="text-sm flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                                <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Need mobile tyre services ASAP?, please call us on <a class="text-blue-600 underline" href="tel:07442980101">07442 980101</a></span>
-                        </p>
-                    </div>
-                    <div class="col-span-6 lg:p-4">
-                        <h2 class="lg:text-3xl text-2xl font-semibold">When should I get a new tyre?</h2>
-                        <br>
-                        <p class="text-sm">You should get your tyres changed if you experience any of the following signs of damage:</p>
-                        <ul class="text-sm list-disc pl-5 mt-2 space-y-1">
-                            <li>Once the tyre tread has worn to the legal limit of 1.6mm.</li>
-                            <li>If you hear a squeaky humming sound caused by a chopped tread.</li>
-                            <li>A puncture on the side of the tyre.</li>
-                            <li>You can notice the lack of traction in your tyres due to tread wear.</li>
-                            <li>If your tyre shows signs of ageing.</li>
-                            <li>If the tyre is not suited for your vehicle.</li>
-                            <li>Other reasons.</li>
-                        </ul>
+
+<!--                    FAQ-->
+                    <div class="col-span-12 lg:p-4">
+                        <FAQ />
                     </div>
                 </div>
             </div>
         </Content>
     </Container>
 
+    <Container>
+        <OurServices class="border-t"/>
+    </Container>
     <OurQualities />
 </template>
 
@@ -160,6 +256,7 @@ import MainCarousel from '../Shared/Carousel/MainCarousel.vue'
 import SearchTyre from '../Shared/SearchTyre.vue'
 import OurServices from '../Shared/OurServices.vue'
 import OurQualities from '../Shared/OurQualities.vue'
+import FAQ from '../Shared/FAQ.vue'
 </script>
 
 <style scoped>

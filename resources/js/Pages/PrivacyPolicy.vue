@@ -1,8 +1,15 @@
 <template>
     <Head>
-        <title>Privacy Policy | Tyres Anywhere</title>
-        <meta name="description" content="Tyres Anywhere's Privacy Policy">
+        <title>Privacy Policy - How We Protect Your Data | Tyres Anywhere</title>
+        <meta name="description" content="Read our Privacy Policy to learn how we collect, use, and protect your personal data. Your privacy and data security are our top priority at Tyres Anywhere.">
         <link rel="canonical" href="https://tyresanywhere.co.uk/privacy-policy">
+
+        <meta property="og:title" content="Privacy Policy - How We Protect Your Data" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tyresanywhere.co.uk/privacy-policy" />
+        <meta property="og:image" content="https://tyresanywhere.co.uk/assets/images/showcase/gallary/mobile-tyre-fitting-2.webp" />
+        <meta property="og:description" content="Read our Privacy Policy to learn how we collect, use, and protect your personal information. Your privacy and data security are our top priority at Tyres Anywhere." />
+        <meta property="og:site_name" content="Tyres Anywhere" />
     </Head>
     <Container>
         <div class="border-x border-gray-300 sm:px-8 px-4 pt-8 pb-8">
@@ -24,7 +31,7 @@
             </p>
             <br>
             <p class="text-sm">
-                If you have any questions about this privacy notice, please contact the data privacy manager here <a href="mailto:info@tyresanywhere.com">info@tyresanywhere.com</a>.
+                If you have any questions about this privacy notice, please contact the data privacy manager here <a href="mailto:info@tyresanywhere.co.uk">info@tyresanywhere.co.uk</a>.
             </p>
 
             <br>

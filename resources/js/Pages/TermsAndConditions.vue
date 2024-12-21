@@ -1,9 +1,15 @@
 <template>
     <Head>
         <title>Terms and Conditions | Tyres Anywhere</title>
-        <meta name="description" content="Tyres Anywhere, Terms &amp; Conditions">
-        <meta name="keywords" content="tyre fitting, mobile tyre fitting, tyre services, repair my tyre">
+        <meta name="description" content="Read the Terms and Conditions for using Tyres Anywhere. Learn about our policies, user responsibilities, and service agreements to ensure a smooth experience.">
         <link rel="canonical" href="https://tyresanywhere.co.uk/our-terms-and-conditions">
+
+        <meta property="og:title" content="Terms and Conditions" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tyresanywhere.co.uk/our-terms-and-conditions" />
+        <meta property="og:image" content="https://tyresanywhere.co.uk/assets/images/showcase/gallary/mobile-tyre-fitting-4.webp" />
+        <meta property="og:description" content="Read the Terms and Conditions for using Tyres Anywhere. Learn about our policies, user responsibilities, and service agreements to ensure a smooth experience." />
+        <meta property="og:site_name" content="Tyres Anywhere" />
     </Head>
     <Container>
         <div class="border-x border-gray-300 sm:px-8 px-4 pt-8 pb-8">
@@ -11,7 +17,7 @@
 
             <p class="text-sm">
                 Tyres Anywhere is a mobile tyre fitting business in the UK that provides emergency or non-emergency
-                tyre fitting or repairs. Contact information is as followed: telephone: (07442 980101), email: (info@tyresanywhere.com)
+                tyre fitting or repairs. Contact information is as followed: telephone: (07442 980101), email: (info@tyresanywhere.co.uk)
             </p>
             <br>
             <p class="text-sm">
@@ -44,7 +50,7 @@
             </p>
             <br>
             <p class="text-sm">
-                Email at info@tyresanywhere.com
+                Email at info@tyresanywhere.co.uk
             </p>
             <br>
             <p class="text-sm">

@@ -1,8 +1,15 @@
 <template>
     <Head>
         <title>24Hr Breakdown Recovery & Assistance | Tyres Anywhere</title>
-        <meta name="description" content="Our commercial mobile tyre fitting provides and fits high quality cheap tyres for your van, at your convenience."/>
-        <link rel="canonical" href="">
+        <meta name="description" content="24Hr breakdown recovery & assistance for cars, vans, and commercial vehicles. Fast, reliable service to get you back on the road anytime, anywhere. Call now!"/>
+        <link rel="canonical" href="https://tyresanywhere.co.uk/breakdown-recovery">
+
+        <meta property="og:title" content="24Hr Breakdown Recovery & Assistance" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tyresanywhere.co.uk/breakdown-recovery" />
+        <meta property="og:image" content="https://tyresanywhere.co.uk/assets/images/showcase/breakdown-recovery.webp" />
+        <meta property="og:description" content="24Hr breakdown recovery & assistance for cars, vans, and commercial vehicles. Fast, reliable service to get you back on the road anytime, anywhere. Call now!" />
+        <meta property="og:site_name" content="Tyres Anywhere" />
     </Head>
 
     <Container>
@@ -16,7 +23,7 @@
                                     /assets/images/showcase/breakdown-recovery-300.webp 300w"
                         class="object-cover object-center w-full h-full brightness-[0.6]"
                         sizes="(min-width: 1536px) 1280px, (min-width: 1280px) 1152px, (min-width: 1024px) 896px, 100vw"
-                        alt="Mobile Tyre Fitting"
+                        alt="Breakdown recovery showcase"
                     >
                     <div class="absolute left-0 right-0 xl:top-24 xl:translate-y-0 top-1/2 -translate-y-1/2 pt-5 pb-5 text-white text-center">
                         <h1 class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Breakdown Recovery</h1>
@@ -35,7 +42,7 @@
 
         <Content>
             <div class="xl:px-11 sm:px-8 px-4">
-                <h1 class="font-montserrat font-bold md:text-3xl sm:text-2xl text-xl mb-2 uppercase">Breakdown Recovery</h1>
+                <h2 class="font-montserrat font-bold md:text-3xl sm:text-2xl text-xl mb-2 uppercase">Breakdown Recovery</h2>
                 <h2 class="md:text-xl sm:text-lg text-base mb-10">If you're broken down at the side of the road, we're here to help!</h2>
 
                 <div class="lg:grid grid-cols-12 gap-y-12 lg:gap-x-4 lg:space-y-0 space-y-12 lg:mt-8 mt-4">
@@ -112,7 +119,7 @@
                             alt="Breakdown rescue"
                         >
                     </div>
-                    <div class="col-span-12">
+                    <div class="col-span-12 lg:p-4">
                         <p class="text-sm">
                             When it comes to breakdown recovery, you need a service you can trust.
                             TyresAnywhere is your go-to partner for fast, reliable, and professional assistance.
@@ -120,11 +127,18 @@
                             Remember, we're just a phone call away, ready to help you get back on the road with minimal disruption.
                         </p>
                     </div>
+
+                    <div class="col-span-12 lg:p-4">
+                        <FAQ />
+                    </div>
                 </div>
             </div>
         </Content>
     </Container>
 
+    <Container>
+        <OurServices class="border-t"/>
+    </Container>
     <OurQualities />
 </template>
 
@@ -136,6 +150,8 @@ import MainCarousel from '../Shared/Carousel/MainCarousel.vue'
 import SearchTyre from '../Shared/SearchTyre.vue'
 import OurServices from '../Shared/OurServices.vue'
 import OurQualities from '../Shared/OurQualities.vue'
+import FAQ from '../Shared/FAQ.vue'
+
 </script>
 
 <style scoped>

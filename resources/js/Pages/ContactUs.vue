@@ -1,8 +1,15 @@
 <template>
     <Head>
-        <title>Contact Us | Tyres Anywhere</title>
-        <meta name="description" content="Need to contact the team? We're always available! Fill out the short form on this page or call us at 07442 980101">
-        <link rel="canonical" href="">
+        <title>Contact Us - Get in Touch for Tyre Services | Tyres Anywhere</title>
+        <meta name="description" content="Have questions or need tyre services? Contact Tyres Anywhere for mobile tyre fitting, repairs, and more. We're here to help—reach us by phone, email, or online.">
+        <link rel="canonical" href="https://tyresanywhere.co.uk/contact-us">
+
+        <meta property="og:title" content="Contact Us" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tyresanywhere.co.uk/contact-us" />
+        <meta property="og:image" content="https://tyresanywhere.co.uk/assets/images/showcase/contact.webp" />
+        <meta property="og:description" content="Have questions or need tyre services? Contact Tyres Anywhere for mobile tyre fitting, repairs, and more. We're here to help—reach us by phone, email, or online." />
+        <meta property="og:site_name" content="Tyres Anywhere" />
     </Head>
     <Container>
         <div class="flex md:flex-row flex-col md:pt-12 sm:pt-6 xl:h-[340px] lg:h-[300px] md:h-[280px]">
@@ -95,7 +102,7 @@
                 </div>
                 <div class="lg:col-span-6 md:col-span-5 xl:pl-24 lg:pl-16 md:pl-4">
                     <p class="xl:text-3xl lg:text-2xl text-xl text-gray-600 md:mb-6 mb-2">Tel: <a class="text-blue-700 hover:text-cyan-500 transition duration-300 ease-in-out" href="tel:07442980101">07442 980101</a></p>
-                    <p class="xl:text-3xl lg:text-2xl text-xl text-gray-600">Email: <a class="text-blue-700 hover:text-cyan-500 transition duration-300 ease-in-out" href="mailto:info@tyresanywhere.com">info@tyresanywhere.com</a></p>
+                    <p class="xl:text-3xl lg:text-2xl text-xl text-gray-600">Email: <a class="text-blue-700 hover:text-cyan-500 transition duration-300 ease-in-out" href="mailto:info@tyresanywhere.co.uk">info@tyresanywhere.co.uk</a></p>
                 </div>
             </div>
         </div>

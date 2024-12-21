@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
 use App\Models\CoveredAreas;
 use Illuminate\Support\Facades\Route;
@@ -16,6 +17,19 @@ use Inertia\Inertia;
 |
 */
 
+Route::get('/404', function () {
+    return Inertia::render('Error', ['status' => 404]);
+});
+Route::get('/403', function () {
+    return Inertia::render('Error', ['status' => 403]);
+});
+Route::get('/500', function () {
+    return Inertia::render('Error', ['status' => 500]);
+});
+Route::get('/503', function () {
+    return Inertia::render('Error', ['status' => 503]);
+});
+
 Route::get('/', function () {
     return Inertia::render('Index');
 });
@@ -25,20 +39,11 @@ Route::get('/mobile-tyre-fitting', function () {
 Route::get('/mobile-tyre-repair', function () {
     return Inertia::render('MobileTyreRepair');
 });
-Route::get('/commercial-tyres', function () {
-    return Inertia::render('CommercialTyres');
-});
-Route::get('/puncture-repair', function () {
-    return Inertia::render('PunctureRepair');
-});
-Route::get('/tyre-replacement', function () {
-    return Inertia::render('TyreReplacement');
+Route::get('/van-mobile-tyre-fitting', function () {
+    return Inertia::render('VanMobileTyreFitting');
 });
 Route::get('/breakdown-recovery', function () {
     return Inertia::render('BreakdownRecovery');
-});
-Route::get('/tyres', function () {
-    return Inertia::render('Tyres');
 });
 Route::get('/privacy-policy', function () {
     return Inertia::render('PrivacyPolicy');
@@ -47,7 +52,11 @@ Route::get('/our-terms-and-conditions', function () {
     return Inertia::render('TermsAndConditions');
 });
 Route::get('/sitemap', function () {
-    $areas = CoveredAreas::orderBy('slug', 'asc')->get()->toArray();
+    $areas = CoveredAreas::orderBy('slug', 'asc')->get()->groupBy(function($area) {
+        return strtoupper(substr($area['slug'], 0, 1));
+    })->toArray();
+
+    ksort($areas); // Sort the groups alphabetically by key (A-Z)
 
     return Inertia::render('Sitemap', [
         'areas' => $areas,
@@ -63,3 +72,7 @@ Route::get('/locations/{area:slug}', function (CoveredAreas $area) {
 Route::get('/contact-us', [ContactController::class, 'index']);
 Route::post('/contact-us', [ContactController::class, 'store']);
 
+
+
+Route::get('/blog', [BlogController::class, 'index']);
+Route::get('/blog/{slug}', [BlogController::class, 'show']);

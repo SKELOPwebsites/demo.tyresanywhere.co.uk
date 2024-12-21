@@ -1,11 +1,11 @@
-import '../css/app.css'
+// import '../css/app.css'
 
 import { createInertiaApp } from '@inertiajs/vue3'
 import createServer from '@inertiajs/vue3/server'
 import { renderToString } from '@vue/server-renderer'
 import { createSSRApp, h } from 'vue'
-import Layout from "./Shared/Layouts/Layout.vue";
 
+import Layout from "./Shared/Layouts/Layout.vue";
 
 createServer(page =>
     createInertiaApp({
@@ -23,4 +23,5 @@ createServer(page =>
             }).use(plugin)
         },
     }),
+    3001
 )

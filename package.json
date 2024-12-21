@@ -17,6 +17,8 @@
         "@inertiajs/vue3": "^1.0.9",
         "@vitejs/plugin-vue": "^4.2.3",
         "@vue/server-renderer": "^3.3.4",
+        "install": "^0.13.0",
+        "npm": "^9.8.0",
         "vue": "^3.2.36"
     }
 }

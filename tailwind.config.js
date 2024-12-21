@@ -22,7 +22,7 @@ module.exports = {
                 }
             },
             fontFamily: {
-                'poppins': ['Poppins', ...defaultTheme.fontFamily.sans],
+                'exo': ['Exo', ...defaultTheme.fontFamily.sans],
                 'open-sans': ['OpenSans', ...defaultTheme.fontFamily.sans],
                 'montserrat': ['Montserrat', ...defaultTheme.fontFamily.sans]
             },
