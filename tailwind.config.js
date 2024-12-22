@@ -17,8 +17,8 @@ module.exports = {
                     700: '#ff7777',
                 },
                 'secondary': {
-                    400: '#695A5A',
-                    500: '#564A4A',
+                    400: '#2E2E2E',
+                    500: '#444444',
                 }
             },
             fontFamily: {

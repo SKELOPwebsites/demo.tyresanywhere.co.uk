@@ -59,7 +59,7 @@
                         </NavbarDropdown>
                     </li>
                     <li>
-                        <NavLink href="/blog" title="Blog Posts">Blog</NavLink>
+                        <NavLink href="/blog" title="Blog Posts" >Blog</NavLink>
                     </li>
                     <li>
                         <NavLink href="/contact-us" title="Contact Us">Contact Us</NavLink>
