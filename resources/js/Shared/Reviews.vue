@@ -1,5 +1,5 @@
 <template>
-    <div class="px-20 mt-20 font-rubik">
+    <div class="mt-20 font-rubik">
         <h2 class="text-center lg:text-4xl sm:text-3xl text-2xl font-bold mb-10">What Our Customers Are Saying</h2>
 
         <div>
@@ -11,9 +11,9 @@
                 :centeredSlides="true"
                 :slidesPerView="'auto'"
                 :coverflowEffect="{
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
+                rotate: 0,
+                stretch: -10,
+                depth: 0,
                 modifier: 1,
                 slideShadows: false,
                 }"
@@ -94,7 +94,7 @@
                         <p class="text-xl font-light">These guys provided an excellent out of hours service. I can't recommend them enough.</p>
                     </div>
                 </SwiperSlide>
-                
+
                 <SwiperSlide>
                     <div class="review-container">
                         <div class="flex items-center">
@@ -138,7 +138,7 @@
 </template>
 
 <script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue'; 
+import { Swiper, SwiperSlide } from 'swiper/vue';
 import { EffectCoverflow, Autoplay } from 'swiper/modules';
 
 import 'swiper/css';

@@ -1,5 +1,7 @@
 <template>
+    <HeaderSpace />
     <Container class="sm:py-10 py-6 flex xl:flex-row flex-col gap-x-12 gap-y-12">
+
         <component :is="currentBlogPost" :date="formatHumanReadableDate(props.currentPost.date)" :dateISO="formatISODate(props.currentPost.date)" />
 
         <div class="shrink-0 xl:w-96 w-full">
@@ -10,6 +12,7 @@
 
 <script setup>
 import { Link, Head, usePage } from '@inertiajs/vue3'
+import HeaderSpace from "../Shared/HeaderSpace.vue"
 import Container from '../Shared/Container.vue'
 import BlogSidebar from '../Shared/Blog/BlogSidebar.vue'
 import { defineAsyncComponent } from 'vue'

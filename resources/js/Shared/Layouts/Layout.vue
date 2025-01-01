@@ -1,13 +1,13 @@
 <template>
 
-    <header :class="{ 
-        sticky : isSticky }" 
+    <header :class="{
+        sticky : isSticky }"
         class="absolute top-0 left-0 w-full z-50">
         <Header />
     </header>
 
     <slot />
-    
+
 
     <Footer />
 

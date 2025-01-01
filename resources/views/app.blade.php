@@ -61,7 +61,7 @@
     <link rel="preload" as="image" href="/assets/images/showcase/gallary/mobile-tyre-fitting-1.webp" type="image/webp" imagesrcset="
         /assets/images/showcase/gallary/mobile-tyre-fitting-1-1080.webp 1080w,
         /assets/images/showcase/gallary/mobile-tyre-fitting-1-500.webp 500w,
-        /assets/images/showcase/gallary/mobile-tyre-fitting-1-300.webp 300w" 
+        /assets/images/showcase/gallary/mobile-tyre-fitting-1-300.webp 300w"
         imagesizes="(min-width: 1536px) 413px,
                    (min-width: 1280px) 413px,
                    (min-width: 1024px) 360px,
@@ -69,7 +69,7 @@
                    (min-width: 640px) 432px,
                    300px"
         fetchpriority="high">
-        
+
     <link rel="preload" href="https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nBrXyw023e.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -77,9 +77,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
+
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@200;300;400;500;600;700;800&family=Montserrat:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@200;300;400;500;600;700;800&family=Rubik:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
+    <meta name="googlebot" content="noindex, nofollow">
 </head>
 <body class="font-exo bg-gray-50" lang="en-GB" aria-label="Tyres Anywhere - Mobile Tyre Fitting">
 @inertia

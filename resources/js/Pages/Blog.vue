@@ -13,6 +13,8 @@
     </Head>
 
     <Container class="sm:py-10 py-6">
+        <HeaderSpace />
+
         <h1 class="font-montserrat font-extrabold md:text-4xl sm:text-2xl text-xl mb-2 uppercase">Blog articles</h1>
         <h2 class="md:text-xl sm:text-lg text-base sm:mb-10 mb-4">Learn more about your tyres and mobile tyre fitting</h2>
 
@@ -29,6 +31,7 @@
 import { Link, Head } from '@inertiajs/vue3'
 import Container from '../Shared/Container.vue'
 import BlogCard from '../Shared/Blog/BlogCard.vue'
+import HeaderSpace from "../Shared/HeaderSpace.vue"
 
 defineProps({
     blogPosts: {

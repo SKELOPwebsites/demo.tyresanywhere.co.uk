@@ -1,9 +1,9 @@
 <template>
     <nav class="select-none relative flex items-center justify-start">
-        <Container class="md:block hidden relative">
+        <div class="md:block hidden relative">
             <div class="flex items-center">
                 <ul class="flex gap-4 lg:gap-8 list-none">
-                    
+
                     <li class="font-rubik">
                         <NavbarDropdown>
                             <template v-slot:trigger>
@@ -60,7 +60,7 @@
                     </li>
                 </ul>
             </div>
-        </Container>
+        </div>
 
         <!--Mobile Navigation-->
         <div class="md:hidden block w-full flex items-center justify-center h-[3.5rem]">
@@ -88,7 +88,7 @@
                             </svg>
                         </button>
                     </div>
-                    
+
                     <div class="flex flex-col">
                         <NavLinkMob href="/mobile-tyre-fitting" component="MobileTyreFitting" title="Mobile Tyre Fitting">Mobile Tyre Fitting</NavLinkMob>
                         <a href="https://tyresanywhere.com/search-tyres" title="Search Tyres" class="w-full py-4 pl-6 text-sm font-medium">Search Tyres</a>
@@ -114,7 +114,7 @@
                             07442 980101
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
         </transition>

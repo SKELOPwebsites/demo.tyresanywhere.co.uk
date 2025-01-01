@@ -1,11 +1,11 @@
 <template>
-    <div class="flex flex-col sm:flex-row h-full bg-wheelfit-300 p-10 mx-8 sm:mx-20 gap-8 mt-24 sm:mt-32 reveal">
+    <div class="flex flex-col sm:flex-row h-full bg-wheelfit-300 p-10 gap-8 mt-24 sm:mt-32 reveal">
         <div class="flex-1 flex flex-col justify-between text-white font-rubik py-5">
             <div>
                 <h2 class="uppercase text-4xl font-bold">Find your tyres</h2>
                 <p class="lg:text-lg text-base font-light text-gray-100">Use our tyre size search to find the perfect fit for your vehicle today.</p>
             </div>
-            
+
             <div class="flex flex-col sm:flex-row items-center space-x-2 mt-auto font-extralight">
                 <p>Need Help?</p>
                 <button type="button" class="underline cursor-pointer" @click="openModal">
@@ -13,8 +13,8 @@
                 </button>
             </div>
         </div>
-        
-        <div v-if="isModalOpen" 
+
+        <div v-if="isModalOpen"
         @click.self="closeModal"
         class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
             <div class="bg-white p-5 rounded-lg w-2/3 font-rubik flex flex-col items-center">
@@ -35,7 +35,7 @@
                 <button class="mt-4 bg-red-500 text-white py-4 px-14 rounded-lg hover:bg-wheelfit-400 transition duration-300" @click="closeModal">CLOSE</button>
             </div>
         </div>
-        
+
         <div class="flex-1 flex flex-col bg-white p-2 sm:p-6 rounded-md shadow-lg">
             <img
                 class="w-full px-5"
@@ -49,7 +49,7 @@
                                     (max-width: 992px) 400px,
                                     (max-width: 1200px) 344px,
                                     (max-width: 1400px) 356px,
-                                    356px"                
+                                    356px"
                 width="720"
                 height="300"
                 alt="Tyre Size Guide"

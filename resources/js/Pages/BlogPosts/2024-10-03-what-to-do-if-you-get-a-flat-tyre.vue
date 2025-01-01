@@ -29,7 +29,7 @@
             >
 
             <p>
-                A flat tyre can happen to anyone, often at the most inconvenient times. Whether you're on a busy highway or a quiet country road,
+                A flat tyre can happen to anyone, often at the most inconvenient times. Whether you're on a busy motorway or a quiet country road,
                 knowing how to handle a flat tyre is essential for staying safe and getting back on the road quickly.
                 This step-by-step guide will walk you through what to do if you get a flat tyre, from initial safety precautions to replacing the tyre or seeking assistance.
             </p>
@@ -82,7 +82,7 @@
             </ul>
 
             <p>
-                Make sure you check your surroundings carefully before exiting the vehicle, especially if you're on a busy road or highway.
+                Make sure you check your surroundings carefully before exiting the vehicle, especially if you're on a busy road or motorway.
             </p>
 
             <h3 class="text-xl font-semibold">3. Assess the Damage</h3>

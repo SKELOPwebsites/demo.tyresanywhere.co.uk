@@ -128,7 +128,7 @@
                 </li>
                 <li>
                     <span class="font-medium">All-Terrain Tyres:</span>
-                    If you drive both on-road and off-road, all-terrain tyres are a great choice. They have a more aggressive tread pattern that can handle rough surfaces, but they still provide decent performance on highways.
+                    If you drive both on-road and off-road, all-terrain tyres are a great choice. They have a more aggressive tread pattern that can handle rough surfaces, but they still provide decent performance on motorways.
                 </li>
                 <li>
                     <span class="font-medium">Run-Flat Tyres:</span>

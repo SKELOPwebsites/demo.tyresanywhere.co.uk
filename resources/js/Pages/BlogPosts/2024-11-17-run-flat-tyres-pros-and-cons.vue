@@ -60,7 +60,7 @@
                     <span class="font-medium">Enhanced Safety</span>
                     <ul class="list-disc pl-5 space-y-3">
                         <li>
-                            With run-flat tyres, you maintain control over your vehicle even after a puncture, reducing the risk of accidents on busy roads or highways.
+                            With run-flat tyres, you maintain control over your vehicle even after a puncture, reducing the risk of accidents on busy roads or motorways.
                         </li>
                         <li>
                             Eliminates the need to stop and change tyres in potentially dangerous or remote locations.
@@ -171,7 +171,7 @@
                     <span class="font-medium">Driving Habits</span>
                     <ul class="list-disc pl-5 space-y-3">
                         <li>
-                            If you frequently drive long distances or on highways, the safety and convenience of run-flat tyres can be a significant advantage.
+                            If you frequently drive long distances or on motorways, the safety and convenience of run-flat tyres can be a significant advantage.
                         </li>
                         <li>
                             Urban drivers may benefit less, as service centers are typically nearby.

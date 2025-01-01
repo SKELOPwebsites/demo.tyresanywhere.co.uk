@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+
+Sitemap: https://www.tyresanywhere.co.uk/sitemap.xml

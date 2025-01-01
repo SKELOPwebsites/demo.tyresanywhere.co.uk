@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-20 px-20 lg:mt-0 sm:mt-6 mt-4 flex items-start relative gap-10">
+    <div class="pt-20 lg:mt-0 sm:mt-6 mt-4 flex items-start relative gap-10">
         <div class="lg:w-full w-full font-exo">
             <img src="/assets/images/coverage.webp" alt="Tyres Anywhere Coverage Zone Map" class="absolute w-full h-full inset-0 object-cover lg:hidden block brightness-[0.35]" loading="lazy">
 

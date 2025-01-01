@@ -1,6 +1,6 @@
 <template>
-    <Container class="flex relative items-center justify-between px-8 py-2">
-        
+    <div class="flex relative items-center justify-between px-8 py-2 max-w-[1596px] mx-auto">
+
         <div class="flex items-center gap-3 lg:gap-6 relative w-full">
             <!-- Company Logo -->
             <div class="flex-shrink-0">
@@ -21,7 +21,7 @@
                 <Navbar/>
             </div>
         </div>
-        
+
         <!-- Call Us CTA: Hidden on Mobile -->
         <div class="hidden md:block">
             <a class="whitespace-nowrap flex items-center text-white bg-wheelfit-300 rounded-full px-6 py-3 shadow-lg text-base lg:text-lg font-semibold z-10 hover:bg-wheelfit-400 hover:scale-105 transition-all duration-300" href="tel:07442980101" title="Phone Number">
@@ -29,8 +29,8 @@
                 07442 980101
             </a>
         </div>
-    </Container>
-    
+    </div>
+
 </template>
 
 <script setup>

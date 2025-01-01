@@ -1,8 +1,8 @@
 <template>
-    <div class="flex flex-wrap-reverse md:flex-nowrap items-start lg:items-start sm:items-center justify-center gap-8 md:gap-16 px-12 md:px-20 py-8 max-w-6xl mx-auto h-full">
-        <div class="relative md:w-1/2 w-full h-full flex flex-col text-center md:text-left"> 
+    <div class="flex flex-wrap-reverse md:flex-nowrap items-start lg:items-start sm:items-center justify-center gap-8 md:gap-16 py-8 max-w-6xl mx-auto h-full">
+        <div class="relative md:w-1/2 w-full h-full flex flex-col text-center md:text-left">
             <!-- Text Swiper -->
-            <Swiper 
+            <Swiper
             :modules="[EffectFade, Navigation, Controller, Autoplay]"
             :loop="true"
             :effect="'fade'"
@@ -40,7 +40,7 @@
 
                         <div class="h-6"></div>
                     </div>
-                
+
                 </SwiperSlide>
 
                 <!-- Slide 3 -->
@@ -54,7 +54,7 @@
 
                         <div class="h-6"></div>
                     </div>
-                    
+
                 </SwiperSlide>
 
                 <!-- Slide 4 -->
@@ -67,7 +67,7 @@
 
                         <div class="h-6"></div>
                     </div>
-                    
+
                 </SwiperSlide>
 
                 <!-- Slide 5 -->
@@ -82,11 +82,11 @@
 
                         <div class="h-6"></div>
                     </div>
-                    
+
                 </SwiperSlide>
             </Swiper>
             <div class="z-10 flex flex-col gap-6">
-                
+
                 <!-- CTA Buttons -->
                 <div class="flex justify-center md:justify-start gap-4">
                     <a href="tel:07442980101" class="bg-wheelfit-300 text-white inline-flex items-center justify-center py-3 px-6 rounded-full shadow-xl transition duration-300 hover:bg-wheelfit-400 hover:scale-105">
@@ -109,12 +109,12 @@
                     </button>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="md:w-5/12 w-full px-4 sm:px-20 md:px-0">
             <!-- Image Swiper -->
-            <Swiper 
+            <Swiper
             :modules="[EffectCards, Controller, Autoplay]"
             :effect="'cards'"
             :slides-per-view="1"
@@ -231,9 +231,9 @@
     </div>
 
 </template>
-  
+
 <script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue'; 
+import { Swiper, SwiperSlide } from 'swiper/vue';
 import { EffectFade, EffectCards, Navigation, Controller, Autoplay } from 'swiper/modules';
 import { ref } from 'vue';
 
@@ -242,7 +242,7 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/effect-cards';
 import 'swiper/css/navigation';
 
-const firstSwiper = ref(null);   
+const firstSwiper = ref(null);
 const secondSwiper = ref(null);
 
 const setFirstSwiper = (swiper) => {
@@ -271,13 +271,13 @@ defineProps({
 .slide-description{
     font-size: clamp(1rem, 2vw, 1.5rem);
     text-align: left;
-    font-weight: 300; 
-    max-width: 65ch; 
+    font-weight: 300;
+    max-width: 65ch;
     line-height: 1.2;
 
     /* Responsive Styles */
-    @media (min-width: 640px) { 
-        font-size: 1.25rem; 
+    @media (min-width: 640px) {
+        font-size: 1.25rem;
     }
 }
 .swiper-slide{
@@ -292,4 +292,3 @@ defineProps({
 
 
 </style>
-  
