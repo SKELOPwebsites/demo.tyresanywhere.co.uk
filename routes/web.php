@@ -30,9 +30,11 @@ Route::get('/503', function () {
     return Inertia::render('Error', ['status' => 503]);
 });
 
+
 Route::get('/', function () {
     return Inertia::render('Index');
 });
+
 Route::get('/mobile-tyre-fitting', function () {
     return Inertia::render('MobileTyreFitting');
 });

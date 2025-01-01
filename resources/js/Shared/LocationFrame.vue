@@ -12,6 +12,7 @@
                                     /assets/images/pages/home/tyres-anywhere-van-500.webp 500w,
                                     /assets/images/pages/home/tyres-anywhere-van-375.webp 375w"
                     sizes="(max-width: 600px) 375px, (max-width: 768px) 500px, (max-width: 1024px) 640px, 500px"
+                    loading="lazy"
                     alt="Tyres Anywhere mechanic in a van"
                 >
             </div>
@@ -64,6 +65,7 @@
                                     /assets/images/pages/home/mobile-tyre-fitting-500.webp 500w,
                                     /assets/images/pages/home/mobile-tyre-fitting-375.webp 375w"
                     sizes="(max-width: 600px) 375px, (max-width: 768px) 500px, (max-width: 1024px) 640px, 500px"
+                    loading="lazy"
                     alt="Tyres Anywhere technician doing a mobile tyre replacement"
                 >
             </div>

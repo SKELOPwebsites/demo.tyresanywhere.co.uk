@@ -12,7 +12,7 @@
     <Container>
         <div class="flex md:flex-row flex-col md:pt-12 sm:pt-6 xl:h-[340px] lg:h-[300px] md:h-[280px]">
             <div class="xl:w-[70%] md:w-[65%] w-full">
-                <MainCarousel :location="location"/>
+                
             </div>
             <div class="xl:w-[30%] md:w-[35%] w-full">
                 <SearchTyre />
@@ -36,7 +36,6 @@
 import {Link, Head, usePage} from '@inertiajs/vue3'
 import Container from '../Shared/Container.vue'
 import Content from '../Shared/Content.vue'
-import MainCarousel from '../Shared/Carousel/MainCarousel.vue'
 import SearchTyre from '../Shared/SearchTyre.vue'
 import OurServices from '../Shared/OurServices.vue'
 import OurQualities from '../Shared/OurQualities.vue'
@@ -50,9 +49,11 @@ const props = defineProps({
 })
 
 // Dynamically load the blog post component based on the slug
+
 const currentLocation = defineAsyncComponent(() =>
     import(`./Locations/${props.slug}.vue`)
 )
+
 </script>
 
 <style scoped>

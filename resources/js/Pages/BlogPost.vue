@@ -20,9 +20,11 @@ const slug = props.slug
 const date = props.currentPost.date
 
 // Dynamically load the blog post component based on the slug
+
 const currentBlogPost = defineAsyncComponent(() =>
     import(`./BlogPosts/${date}-${slug}.vue`)
 )
+
 
 function formatISODate(dateString) {
     // Convert '28/09/2024' to '2024-09-28'
