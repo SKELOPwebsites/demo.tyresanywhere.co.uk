@@ -18,4 +18,13 @@ export default defineConfig({
             },
         }),
     ],
+
+    optimizeDeps: {
+        exclude: ['swiper'], 
+    },
+    build: {
+        rollupOptions: {
+            external: ['swiper'], 
+        },
+    },
 });

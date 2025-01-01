@@ -1,7 +1,7 @@
 <template>
     <div class="lg:py-20 py-10 lg:mt-0 sm:mt-6 mt-4 flex items-center relative">
         <div class="lg:w-full w-full font-exo">
-            <img src="/assets/images/coverage.webp" alt="Tyres Anywhere Coverage Zone Map" class="absolute w-full h-full inset-0 object-cover lg:hidden block brightness-[0.35]">
+            <img src="/assets/images/coverage.webp" alt="Tyres Anywhere Coverage Zone Map" class="absolute w-full h-full inset-0 object-cover lg:hidden block brightness-[0.35]" loading="lazy">
 
             <div class="relative z-10">
                 <h3 class="xl:text-5xl sm:text-4xl text-3xl font-semibold mb-2 lg:text-black text-white lg:text-left text-center">Areas we Cover</h3>
@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="shrink-0 lg:block hidden">
-            <img src="/assets/images/coverage.webp" alt="Tyres Anywhere Coverage Zone Map" class="rounded-3xl">
+            <img src="/assets/images/coverage.webp" alt="Tyres Anywhere Coverage Zone Map" class="rounded-3xl" loading="lazy">
         </div>
     </div>
 </template>

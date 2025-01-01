@@ -1,7 +1,7 @@
 <template>
-    <div class="py-4">
+    <div class="py-4 reveal">
         <div
-            class="flex justify-between font-montserrat py-2 cursor-pointer select-none"
+            class="flex justify-between font-rubik py-2 cursor-pointer select-none"
             @click="isOpen = !isOpen"
         >
             <p class="font-medium sm:text-lg text-base"><slot /></p>
@@ -16,7 +16,7 @@
 
         <div
             v-if="isOpen"
-            class="text-slate-600 pl-4 border-l border-dashed mt-2"
+            class="font-light text-gray-700 pl-4 border-l border-dashed mt-2"
         >
             <p class="sm:text-base text-sm"><slot name="answer"/></p>
         </div>

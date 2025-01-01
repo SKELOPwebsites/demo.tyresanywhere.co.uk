@@ -1,7 +1,7 @@
 <template>
-    <div class="fixed bottom-4 left-4 z-50">
+    <div class="fixed bottom-4 right-4 z-40">
 
-        <button @click="textOpen = !textOpen">
+        <button id="whatsapp-button" @click="textOpen = !textOpen" :class="{ 'translate-y-24': textOpen }" class="hover:scale-110 transition-transform transform duration-300">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 aria-label="WhatsApp" role="img"
@@ -16,7 +16,7 @@
         <Transition>
             <div
                 v-show="textOpen"
-                class="absolute -top-4 -translate-y-full bg-white border sm:w-96 w-72 rounded-xl overflow-hidden"
+                class="z-50 absolute -right-0 -translate-y-full bg-white border sm:w-80 w-64 rounded-2xl overflow-hidden shadow-lg "
             >
                 <div class="flex items-center relative p-4">
                     <div class="size-14 rounded-full relative">
@@ -28,16 +28,16 @@
                         <span class="text-sm">Typically replies within 15 minutes</span>
                     </div>
 
-                    <button @click="textOpen = false" class="absolute top-2 right-2 text-gray-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                    <button @click="textOpen = false" class="absolute top-2 right-2 text-gray-400 hover:text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-7">
                             <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                         </svg>
                     </button>
                 </div>
 
-                <div class="bg-whatsapp px-5 pt-5 pb-8">
+                <div class="bg-whatsapp px-5 pt-5 pb-40">
                     <div class="relative py-1.5 px-3.5 bg-white rounded-b-full rounded-tr-full">
-                        <span>How Can We Help?</span>
+                        <span class="font-medium text-gray-800">How Can We Help?</span>
                         <span class="text-xs ml-3 text-gray-400">{{ time }}</span>
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="9" height="17" viewBox="0 0 9 17" fill="currentColor" class="absolute top-0 -left-[9px] text-white">
@@ -51,7 +51,7 @@
                         v-model="message"
                         ref="textarea"
                         area-required="false"
-                        placeholder="Enter Your Message..."
+                        placeholder="Type your message here..."
                         inputmode="text"
                         class="h-auto border-0 outline-0 ring-0 focus:ring-0 resize-none w-full m-0 p-0 overflow-y-auto custom-scrollbar"
                         rows="1"
@@ -145,13 +145,13 @@ watch(message, () => {
 <style scoped>
 .v-enter-active,
 .v-leave-active {
-    transition-property: opacity;
-    transition:  0.5s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .v-enter-from,
 .v-leave-to {
     opacity: 0;
+    transform: translateY(20px);
 }
 
 .bg-whatsapp{

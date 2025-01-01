@@ -12,6 +12,7 @@
         <meta property="og:site_name" content="Tyres Anywhere" />
     </Head>
     <Container>
+        <HeaderSpace />
         <div class="flex md:flex-row flex-col md:pt-12 sm:pt-6 xl:h-[340px] lg:h-[300px] md:h-[280px]">
             <div class="xl:w-[70%] md:w-[65%] w-full">
                 <div class="relative overflow-hidden md:h-full sm:h-[300px] h-[200px]">
@@ -252,11 +253,11 @@
 import { Link, Head } from '@inertiajs/vue3'
 import Container from '../Shared/Container.vue'
 import Content from '../Shared/Content.vue'
-import MainCarousel from '../Shared/Carousel/MainCarousel.vue'
 import SearchTyre from '../Shared/SearchTyre.vue'
 import OurServices from '../Shared/OurServices.vue'
 import OurQualities from '../Shared/OurQualities.vue'
 import FAQ from '../Shared/FAQ.vue'
+import HeaderSpace from '../Shared/HeaderSpace.vue'
 
 </script>
 

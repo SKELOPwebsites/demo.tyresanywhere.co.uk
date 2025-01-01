@@ -5,11 +5,15 @@
 
     <div
         @mouseover="open = true" @mouseleave="open = false"
-        class="absolute shadow-[0_5px_15px_0px_rgba(0,0,0,0.35)] w-full z-50 left-0 bg-white pb-8 pt-6 border-x border-b border-gray-800 transition duration-400"
-        :class="open ? 'visible opacity-100' : 'invisible opacity-0'"
+        class="absolute shadow-xl rounded-xl mt-4 z-50 left-0 bg-white p-4 transition-all duration-300 ease-in-out transform"
+        :class="open ? 'visible opacity-100 scale-100' : 'invisible opacity-0 scale-95'"
     >
-        <slot name="content"></slot>
+        <div
+        class="absolute top-[-10px] left-[30px] transform w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-white shadow-xl transition-all duration-300 ease-in-out"
+        :class="open ? 'opacity-100 scale-100' : 'opacity-0 scale-95'">
+        </div>
 
+        <slot name="content"></slot>
     </div>
 </template>
 
