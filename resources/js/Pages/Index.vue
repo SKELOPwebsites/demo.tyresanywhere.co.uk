@@ -11,23 +11,26 @@
         <meta property="og:description" content="24/7 emergency mobile tyre fitting service at home, work, or roadside. Fast, reliable repairs and tyre replacements for cars and vans. Call Tyres Anywhere now!" />
         <meta property="og:site_name" content="Tyres Anywhere" />
     </Head>
+    
     <Hero />
 
     <Container>
-
-
-
+        
         <Reviews />
-
-        <SearchTyre />
 
         <OurServices />
 
-        <AreasWeCover />
+        <div class="pt-20">
+            <FAQ />
+        </div>
+
+        <div class="mt-20">
+            <SearchTyre />
+        </div>
 
     </Container>
 
-    <div class="relative bg-wheelfit-500">
+    <div class="relative bg-[#E3E9F1] sm:mt-20">
         <div class="custom-shape-divider-top-1735170425">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
@@ -39,7 +42,6 @@
                 <div class="relative">
                     <div class="py-28 lg:grid grid-cols-12 gap-y-12 xl:gap-x-4 lg:gap-x-8 lg:space-y-0 sm:space-y-12 space-y-6 sm:text-base text-sm">
 
-                        <!-- Welcome to Tyres Anywhere -->
                         <div class="col-span-12 lg:col-span-5 flex items-center items-stretch lg:p-4 reveal">
                             <img
                                 class="w-full object-cover rounded-xl shadow-xl"
@@ -56,7 +58,7 @@
                         </div>
 
                         <div class="col-span-12 lg:col-span-7 lg:p-8 space-y-4">
-                            <h2 class="font-rubik font-extrabold lg:text-4xl sm:text-2xl text-xl mb-2 reveal">Welcome to <span class="text-wheelfit-300">Tyres Anywhere</span></h2>
+                            <h2 class="font-rubik font-extrabold text-4xl mb-2 reveal">Welcome to <span class="text-wheelfit-300">Tyres Anywhere</span></h2>
 
                             <p class="font-rubik font-light reveal">
                                 Looking for a fast, reliable mobile tyre fitting service in High Wycombe, London, Reading, or anywhere near the M40? At Tyres Anywhere, we offer 24/7 emergency tyre repairs and replacements to keep you on the road.
@@ -177,7 +179,20 @@
                         <!-- Our Growing Service Area -->
                         <div class="col-span-12 lg:p-4 font-rubik">
                             <h4 class="lg:text-3xl sm:text-2xl text-xl font-semibold mb-2 reveal">Our Growing Service Area</h4>
-                            <p class="font-light mb-4 reveal">We proudly serve a broad region, including High Wycombe, London, Birmingham, Oxford, Reading, Watford, Milton Keynes, Bicester, Aylesbury, Slough, Uxbridge, Maidenhead, and the surrounding areas.
+                            <p class="font-light mb-4 reveal">We proudly serve a broad region, including 
+                                <Link href="/locations/high-wycombe" class="underline">High Wycombe</Link>,
+                                <Link href="/locations/london" class="underline">London</Link>,
+                                <Link href="/locations/birmingham" class="underline">Birmingham</Link>,
+                                <Link href="/locations/oxford" class="underline">Oxford</Link>,
+                                <Link href="/locations/reading" class="underline">Reading</Link>,
+                                <Link href="/locations/watford" class="underline">Watford</Link>,
+                                <Link href="/locations/milton-keynes" class="underline">Milton Keynes</Link>,
+                                <Link href="/locations/bicester" class="underline">Bicester</Link>,
+                                <Link href="/locations/aylesbury" class="underline">Aylesbury</Link>,
+                                <Link href="/locations/slough" class="underline">Slough</Link>,
+                                <Link href="/locations/uxbridge" class="underline">Uxbridge</Link>,
+                                <Link href="/locations/maidenhead" class="underline">Maidenhead</Link>,
+                                and the surrounding areas.
                                 If you're searching for <span class="font-medium">“mobile tyre fitting near me”</span> in or around the M40 corridor,
                                 look no further—Tyres Anywhere has you covered.</p>
                             <p class="font-light reveal">
@@ -226,12 +241,8 @@
     </div>
 
     <Container>
-        <div id="faq" class="lg:px-20 pt-20">
-            <FAQ />
-        </div>
+        <AreasWeCover />
     </Container>
-
-
 
     <OurQualities />
 </template>
@@ -250,9 +261,6 @@ import Reviews from '../Shared/Reviews.vue'
 </script>
 
 <style scoped>
-#faq {
-    scroll-margin-top: 140px;
-}
 
 .custom-shape-divider-top-1735170425 {
     position: absolute;

@@ -2,7 +2,7 @@
     <div class="py-4 reveal">
         <div
             class="flex justify-between font-rubik py-2 cursor-pointer select-none"
-            @click="isOpen = !isOpen"
+            @click="$emit('toggle')"
         >
             <p class="font-medium sm:text-lg text-base"><slot /></p>
 
@@ -14,22 +14,43 @@
             </svg>
         </div>
 
-        <div
-            v-if="isOpen"
-            class="font-light text-gray-700 pl-4 border-l border-dashed mt-2"
-        >
-            <p class="sm:text-base text-sm"><slot name="answer"/></p>
-        </div>
+        <transition name="dropdown">
+            <div
+                v-if="isOpen"
+                class="font-light text-gray-700 pl-4 border-l border-dashed mt-2 overflow-hidden"
+            >
+                <p class="sm:text-base text-sm"><slot name="answer" /></p>
+            </div>
+        </transition>
+       
     </div>
 </template>
 
 <script setup>
-import { ref } from "vue"
+import { defineProps, defineEmits } from 'vue';
 
-const isOpen = ref(false)
+defineProps({
+    isOpen: Boolean, 
+});
+
+defineEmits(['toggle']); 
 
 </script>
 
 <style scoped>
+
+.dropdown-enter-active {
+    transition: all 0.3s ease;
+}
+
+.dropdown-enter-from {
+    opacity: 0;
+    transform: translateY(-10px); 
+}
+
+.dropdown-enter-to {
+    opacity: 1;
+    transform: translateY(0); 
+}
 
 </style>

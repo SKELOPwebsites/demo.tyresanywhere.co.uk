@@ -28,25 +28,25 @@
                 </div>
             </div>
 
-            <div class="mt-10">
-                <h4 class="font-rubik lg:text-xl sm:text-lg text-base font-medium text-center mb-8 reveal">Accepted Payment Methods</h4>
+            <div class="mt-10 reveal">
+                <h4 class="font-rubik lg:text-xl sm:text-lg text-base font-medium text-center mb-8">Accepted Payment Methods</h4>
 
                 <div class="flex flex-wrap justify-start sm:justify-center gap-10 font-rubik">
-                    <div class="flex items-start gap-4 group reveal">
+                    <div class="flex items-start gap-4 group">
                         <img src="/assets/images/main/paypal.webp" class="transition-transform transform group-hover:scale-110" width="50" height="50" alt="Affordable prices" loading="lazy">
                         <div>
                             <span class="font-medium text-sm">PayPal</span>
                             <p class="font-light text-xs text-gray-600">Fast, secure PayPal payments.</p>
                         </div>
                     </div>
-                    <div class="flex items-start gap-4 group reveal">
+                    <div class="flex items-start gap-4 group">
                         <img src="/assets/images/main/card.webp" class="transition-transform transform group-hover:scale-110" width="50" height="50" alt="Affordable prices" loading="lazy">
                         <div>
                             <span class="font-medium text-sm">Card Payments</span>
                             <p class="font-light text-xs text-gray-600">We accept Visa, Mastercard, AmEx, and more.</p>
                         </div>
                     </div>
-                    <div class="flex items-start gap-4 group reveal">
+                    <div class="flex items-start gap-4 group">
                         <svg xmlns="http://www.w3.org/2000/svg" class="transition-transform transform group-hover:scale-110" width="50" height="50" viewBox="0 0 64 64"><defs></defs><g id="cash"><path class="cls-1" d="M56.06 29.15A3.72 3.72 0 0 0 55 29H9a4 4 0 0 0-4 4v22a4 4 0 0 0 2.94 3.85A3.72 3.72 0 0 0 9 59h46a4 4 0 0 0 4-4V33a4 4 0 0 0-2.94-3.85zM55 51a4 4 0 0 0-4 4H13a4 4 0 0 0-4-4V37a4 4 0 0 0 4-4h38a4 4 0 0 0 4 4z"/><path class="cls-2" d="M55 37v14a4 4 0 0 0-4 4H13a4 4 0 0 0-4-4V37a4 4 0 0 0 4-4h38a4 4 0 0 0 4 4z"/><path class="cls-1" d="M56.06 29.15A3.72 3.72 0 0 0 55 29h-3.64l-3.29-5.7-1.65-2.86a4 4 0 0 1-5.2-1.06A3.62 3.62 0 0 1 41 19L23.58 29h-8l22-12.71 4-2.31.82-.47A4 4 0 0 1 47.88 15z"/><path class="cls-2" d="M51.36 29H23.58L41 19a3.62 3.62 0 0 0 .27.41 4 4 0 0 0 5.2 1.06l1.65 2.86z"/><path class="cls-1" d="m41.6 14-4 2.31-8.16-4.71A4 4 0 0 1 24 13.05L14.76 29h-4.62L22.51 7.58A4 4 0 0 1 28 6.12z"/><ellipse cx="32" cy="44" rx="6" ry="7" style="fill:#89c763"/><path class="cls-2" d="M37.6 16.29 15.59 29h-.83L24 13.05a4 4 0 0 0 5.47-1.47z"/></g></svg>
                         <div>
                             <span class="font-medium text-sm">Cash</span>
@@ -58,7 +58,7 @@
         </Content>
     </Container>
 
-    <div class="relative bg-[url('/public/assets/images/showcase/gallary/mobile-tyre-fitting-8.webp')] p-10 sm:p-20 mt-20 bg-cover text-white">
+    <div class="relative bg-[url('/public/assets/images/showcase/gallary/mobile-tyre-fitting-8.webp')] px-6 sm:px-10 py-20  mt-20 bg-cover text-white">
         <Container>
             <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
 
@@ -73,7 +73,7 @@
                     <p>Call or message us now to get started!</p>
                 </div>
 
-                <div class="flex flex-col sm:flex-row gap-1 sm:gap-5 font-exo">
+                <div class="text-sm sm:text-base flex flex-col sm:flex-row gap-1 sm:gap-5 font-exo">
                     <button @click="emitWhatsAppToggle" class="font-medium inline-flex items-center mt-5 pr-7 pl-6 py-3 bg-green-500 text-white rounded-lg shadow-lg hover:bg-green-600 hover:scale-105 transition duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6 mr-2">
                             <g><path style="fill-rule:evenodd;clip-rule:evenodd;" d="M20.463,3.488C18.217,1.24,15.231,0.001,12.05,0    C5.495,0,0.16,5.334,0.157,11.892c-0.001,2.096,0.547,4.142,1.588,5.946L0.057,24l6.304-1.654    c1.737,0.948,3.693,1.447,5.683,1.448h0.005c6.554,0,11.89-5.335,11.893-11.893C23.944,8.724,22.708,5.735,20.463,3.488z     M12.05,21.785h-0.004c-1.774,0-3.513-0.477-5.031-1.378l-0.361-0.214l-3.741,0.981l0.999-3.648l-0.235-0.374    c-0.99-1.574-1.512-3.393-1.511-5.26c0.002-5.45,4.437-9.884,9.889-9.884c2.64,0,5.122,1.03,6.988,2.898    c1.866,1.869,2.893,4.352,2.892,6.993C21.932,17.351,17.498,21.785,12.05,21.785z M17.472,14.382    c-0.297-0.149-1.758-0.868-2.031-0.967c-0.272-0.099-0.47-0.149-0.669,0.148s-0.767,0.967-0.941,1.166    c-0.173,0.198-0.347,0.223-0.644,0.074c-0.297-0.149-1.255-0.462-2.39-1.475c-0.883-0.788-1.48-1.761-1.653-2.059    s-0.018-0.458,0.13-0.606c0.134-0.133,0.297-0.347,0.446-0.521C9.87,9.97,9.919,9.846,10.019,9.647    c0.099-0.198,0.05-0.372-0.025-0.521C9.919,8.978,9.325,7.515,9.078,6.92c-0.241-0.58-0.486-0.501-0.669-0.51    C8.236,6.401,8.038,6.4,7.839,6.4c-0.198,0-0.52,0.074-0.792,0.372c-0.272,0.298-1.04,1.017-1.04,2.479    c0,1.463,1.065,2.876,1.213,3.074c0.148,0.198,2.095,3.2,5.076,4.487c0.709,0.306,1.263,0.489,1.694,0.626    c0.712,0.226,1.36,0.194,1.872,0.118c0.571-0.085,1.758-0.719,2.006-1.413c0.248-0.694,0.248-1.29,0.173-1.413    C17.967,14.605,17.769,14.531,17.472,14.382z"/></g>

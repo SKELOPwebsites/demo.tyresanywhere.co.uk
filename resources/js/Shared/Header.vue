@@ -1,7 +1,7 @@
 <template>
-    <div class="flex relative items-center justify-between px-8 py-2 max-w-[1596px] mx-auto">
+    <div class="flex items-center justify-between px-8 py-2 max-w-[1596px] mx-auto">
 
-        <div class="flex items-center gap-3 lg:gap-6 relative w-full">
+        <div class="flex items-center gap-3 lg:gap-6 w-full">
             <!-- Company Logo -->
             <div class="flex-shrink-0">
                 <Link href="/">

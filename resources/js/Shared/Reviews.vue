@@ -1,8 +1,8 @@
 <template>
-    <div class="mt-20 font-rubik">
-        <h2 class="text-center lg:text-4xl sm:text-3xl text-2xl font-bold mb-10">What Our Customers Are Saying</h2>
+    <div class="mt-12 font-rubik">
+        <h2 class="text-center text-xl sm:text-2xl lg:text-3xl font-semibold mb-8 reveal">What Our <span class="text-wheelfit-300">Customers Are Saying</span></h2>
 
-        <div>
+        <div class="reveal">
             <Swiper
                 :modules="[EffectCoverflow, Autoplay]"
                 :loop="true"
@@ -24,7 +24,7 @@
                         <div class="flex items-center">
                             <div class="profile-picture bg-[#AA47BC]">T</div>
                             <div>
-                                <span class="font-medium">Tessa Parker</span>
+                                <span class="text-sm sm:text-base font-medium">Tessa Parker</span>
                                 <div class="stars flex">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.5 9.757-5.278 4.354 1.649 7.389L12 17.278 6.129 21.5l1.649-7.389L2.5 9.757l6.333-.924L12 2.5l3.167 6.333z"/></svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.5 9.757-5.278 4.354 1.649 7.389L12 17.278 6.129 21.5l1.649-7.389L2.5 9.757l6.333-.924L12 2.5l3.167 6.333z"/></svg>
@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-xl font-light">Great service! Turned up within 20 mins of the phone call and great tyre and friendly. Saved my Christmas plans 😁</p>
+                        <p class="text-lg sm:text-xl font-light">Great service! Turned up within 20 mins of the phone call and great tyre and friendly. Saved my Christmas plans 😁</p>
                     </div>
                 </SwiperSlide>
 
@@ -43,7 +43,7 @@
                         <div class="flex items-center">
                             <div class="profile-picture bg-[#EF6C00]">C</div>
                             <div>
-                                <span class="font-medium">Cicely Hamdard</span>
+                                <span class="text-sm sm:text-base font-medium">Cicely Hamdard</span>
                                 <div class="stars flex">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.5 9.757-5.278 4.354 1.649 7.389L12 17.278 6.129 21.5l1.649-7.389L2.5 9.757l6.333-.924L12 2.5l3.167 6.333z"/></svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.5 9.757-5.278 4.354 1.649 7.389L12 17.278 6.129 21.5l1.649-7.389L2.5 9.757l6.333-.924L12 2.5l3.167 6.333z"/></svg>
@@ -53,7 +53,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-xl font-light">Blew a tyre on the motorway, got a recovery truck to take me to a petrol station and Ali arrived promptly and was polite, fitted the new tyre within a matter of minutes. Highly recommend</p>
+                        <p class="text-lg sm:text-xl font-light">Blew a tyre on the motorway, got a recovery truck to take me to a petrol station and Ali arrived promptly and was polite, fitted the new tyre within a matter of minutes. Highly recommend</p>
                     </div>
                 </SwiperSlide>
 
@@ -62,7 +62,7 @@
                         <div class="flex items-center">
                             <div class="profile-picture bg-[#0088D1]">I</div>
                             <div>
-                                <span class="font-medium">Ibrahim Yasin</span>
+                                <span class="text-sm sm:text-base font-medium">Ibrahim Yasin</span>
                                 <div class="stars flex">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.5 9.757-5.278 4.354 1.649 7.389L12 17.278 6.129 21.5l1.649-7.389L2.5 9.757l6.333-.924L12 2.5l3.167 6.333z"/></svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.5 9.757-5.278 4.354 1.649 7.389L12 17.278 6.129 21.5l1.649-7.389L2.5 9.757l6.333-.924L12 2.5l3.167 6.333z"/></svg>
@@ -72,7 +72,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-xl font-light">Absolutely great job, have no complaints great service and both workers provided a great service highly recommended.</p>
+                        <p class="text-lg sm:text-xl font-light">Absolutely great job, have no complaints great service and both workers provided a great service highly recommended.</p>
                     </div>
                 </SwiperSlide>
 
@@ -81,7 +81,7 @@
                         <div class="flex items-center">
                             <div class="profile-picture bg-[#8B6E63]">D</div>
                             <div>
-                                <span class="font-medium">David Vachell</span>
+                                <span class="text-sm sm:text-base font-medium">David Vachell</span>
                                 <div class="stars flex">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.5 9.757-5.278 4.354 1.649 7.389L12 17.278 6.129 21.5l1.649-7.389L2.5 9.757l6.333-.924L12 2.5l3.167 6.333z"/></svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.5 9.757-5.278 4.354 1.649 7.389L12 17.278 6.129 21.5l1.649-7.389L2.5 9.757l6.333-.924L12 2.5l3.167 6.333z"/></svg>
@@ -91,7 +91,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-xl font-light">These guys provided an excellent out of hours service. I can't recommend them enough.</p>
+                        <p class="text-lg sm:text-xl font-light">These guys provided an excellent out of hours service. I can't recommend them enough.</p>
                     </div>
                 </SwiperSlide>
 
@@ -100,7 +100,7 @@
                         <div class="flex items-center">
                             <div class="profile-picture bg-[#BF360D]">C</div>
                             <div>
-                                <span class="font-medium">Charlotte Garside</span>
+                                <span class="text-sm sm:text-base font-medium">Charlotte Garside</span>
                                 <div class="stars flex">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.5 9.757-5.278 4.354 1.649 7.389L12 17.278 6.129 21.5l1.649-7.389L2.5 9.757l6.333-.924L12 2.5l3.167 6.333z"/></svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.5 9.757-5.278 4.354 1.649 7.389L12 17.278 6.129 21.5l1.649-7.389L2.5 9.757l6.333-.924L12 2.5l3.167 6.333z"/></svg>
@@ -110,7 +110,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-xl font-light">Clear and helpful communication and speedy resolution of flat tyre. Highly recommend!</p>
+                        <p class="text-lg sm:text-xl font-light">Clear and helpful communication and speedy resolution of flat tyre. Highly recommend!</p>
                     </div>
                 </SwiperSlide>
 
@@ -119,7 +119,7 @@
                         <div class="flex items-center">
                             <div class="profile-picture bg-[#004C3E]">H</div>
                             <div>
-                                <span class="font-medium">Hannah Corcoran</span>
+                                <span class="text-sm sm:text-base font-medium">Hannah Corcoran</span>
                                 <div class="stars flex">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.5 9.757-5.278 4.354 1.649 7.389L12 17.278 6.129 21.5l1.649-7.389L2.5 9.757l6.333-.924L12 2.5l3.167 6.333z"/></svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.5 9.757-5.278 4.354 1.649 7.389L12 17.278 6.129 21.5l1.649-7.389L2.5 9.757l6.333-.924L12 2.5l3.167 6.333z"/></svg>
@@ -129,7 +129,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-xl font-light">Very efficient and a pleasure to do business with 😎</p>
+                        <p class="text-lg sm:text-xl font-light">Very efficient and a pleasure to do business with 😎</p>
                     </div>
                 </SwiperSlide>
             </Swiper>
@@ -183,6 +183,27 @@ import 'swiper/css/effect-coverflow';
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 640px) {
+    .profile-picture {
+        width: 40px; 
+        height: 40px;
+        font-size: 18px;
+        margin-right: 12px;
+    }
+
+    .stars svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .swiper-slide {
+        width: 280px; 
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }
 
 </style>

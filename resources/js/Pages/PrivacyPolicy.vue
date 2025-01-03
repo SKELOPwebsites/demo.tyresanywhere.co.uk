@@ -11,9 +11,10 @@
         <meta property="og:description" content="Read our Privacy Policy to learn how we collect, use, and protect your personal information. Your privacy and data security are our top priority at Tyres Anywhere." />
         <meta property="og:site_name" content="Tyres Anywhere" />
     </Head>
+    <HeaderSpace />
     <Container>
-        <div class="border-x border-gray-300 sm:px-8 px-4 pt-8 pb-8">
-            <h1 class="sm:text-4xl text-3xl sm:mb-12 mb-6">Privacy Policy</h1>
+        <div class="mb-20 sm:px-8 px-4 pt-8 pb-8 font-rubik">
+            <h1 class="font-bold text-center md:text-5xl sm:text-4xl text-3xl sm:mb-12 mb-6">Privacy Policy</h1>
 
             <p class="text-sm">
                 Tyres Anywhere respects your privacy and is committed to protecting your personal data.
@@ -24,7 +25,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">Controller</h3>
+            <h3 class="text-2xl font-semibold">Controller</h3>
             <br>
             <p class="text-sm">
                 Tyres Anywhere LTD is the controller and responsible for your personal data.
@@ -37,7 +38,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">Third-party links</h3>
+            <h3 class="text-2xl font-semibold">Third-party links</h3>
             <br>
             <p class="text-sm">
                 This website may include links to third-party websites. Clicking on those links or
@@ -49,7 +50,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">Cookies</h3>
+            <h3 class="text-2xl font-semibold">Cookies</h3>
             <br>
             <p class="text-sm">
                 Cookies are set by the services that we use:
@@ -87,7 +88,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">The type of personal information we collect</h3>
+            <h3 class="text-2xl font-semibold">The type of personal information we collect</h3>
             <br>
             <p class="text-sm">
                 We currently collect and process the following information:
@@ -101,7 +102,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">How is the personal information collected?</h3>
+            <h3 class="text-2xl font-semibold">How is the personal information collected?</h3>
             <br>
             <p class="text-sm">
                 Most of the personal information we process is directly provided by you for the following reasons:
@@ -116,7 +117,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">How we use your personal data</h3>
+            <h3 class="text-2xl font-semibold">How we use your personal data</h3>
             <br>
             <p class="text-sm">
                 We only use your personal data when the law allows us to. We will mostly use your personal data in the following circumstances.
@@ -140,7 +141,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">Where is your data stored?</h3>
+            <h3 class="text-2xl font-semibold">Where is your data stored?</h3>
             <br>
             <p class="text-sm">
                 Your information is securely stored in our database
@@ -154,7 +155,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">Your data protection rights</h3>
+            <h3 class="text-2xl font-semibold">Your data protection rights</h3>
             <br>
             <p class="text-sm">
                 For details, see our <Link class="text-blue-600 underline" href="/privacy-policy">privacy policy</Link> page.
@@ -180,6 +181,7 @@
 <script setup>
 import { Link, Head } from "@inertiajs/vue3";
 import Container from "../Shared/Container.vue";
+import HeaderSpace from "../Shared/HeaderSpace.vue";
 
 </script>
 

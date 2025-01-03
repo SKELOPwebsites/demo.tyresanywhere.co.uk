@@ -11,8 +11,11 @@
         <meta property="og:description" content="Easily navigate Tyres Anywhere with our sitemap. Find pages for mobile tyre fitting, repairs, services, and more. Explore all our offerings in one place." />
         <meta property="og:site_name" content="Tyres Anywhere" />
     </Head>
+
+    <HeaderSpace />
+
     <Container>
-        <div class="border-x border-gray-300 sm:px-8 px-2 pt-8 pb-8">
+        <div class="sm:px-8 px-2 pt-8 pb-8">
             <h1 class="sm:text-3xl text-2xl sm:mb-12 mb-6">Tyres Anywhere LTD Site Map</h1>
 
             <div class="grid grid-cols-12 items-start justify-start sm:gap-x-4 gap-x-2 gap-y-8">
@@ -79,6 +82,7 @@
 import { ref } from "vue";
 import { Link, Head } from "@inertiajs/vue3";
 import Container from "../Shared/Container.vue";
+import HeaderSpace from "../Shared/HeaderSpace.vue";
 
 defineProps({
     areas: Object,

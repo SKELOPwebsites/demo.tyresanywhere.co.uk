@@ -11,9 +11,12 @@
         <meta property="og:description" content="Read the Terms and Conditions for using Tyres Anywhere. Learn about our policies, user responsibilities, and service agreements to ensure a smooth experience." />
         <meta property="og:site_name" content="Tyres Anywhere" />
     </Head>
+
+    <HeaderSpace />
+
     <Container>
-        <div class="border-x border-gray-300 sm:px-8 px-4 pt-8 pb-8">
-            <h1 class="sm:text-4xl text-3xl sm:mb-12 mb-6">Terms & Conditions</h1>
+        <div class="mb-20 font-rubik sm:px-8 px-4 pt-8 pb-8">
+            <h1 class="font-bold text-center md:text-5xl sm:text-4xl text-3xl sm:mb-12 mb-6">Terms & Conditions</h1>
 
             <p class="text-sm">
                 Tyres Anywhere is a mobile tyre fitting business in the UK that provides emergency or non-emergency
@@ -43,7 +46,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">1. How to contact us</h3>
+            <h3 class="text-2xl font-semibold">1. How to contact us</h3>
             <br>
             <p class="text-sm">
                 Call us on 07442 980101
@@ -60,7 +63,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">2. Online Prices and Booking</h3>
+            <h3 class="text-2xl font-semibold">2. Online Prices and Booking</h3>
             <br>
             <p class="text-sm">
                 The price of all the products that we offer is in GBP (£), with cost of labour and parts.
@@ -81,7 +84,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">3. Products</h3>
+            <h3 class="text-2xl font-semibold">3. Products</h3>
             <br>
             <p class="text-sm">
                 The products may also vary from their online pictures. The images of the products on our website
@@ -97,7 +100,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">4. Orders and delivery</h3>
+            <h3 class="text-2xl font-semibold">4. Orders and delivery</h3>
             <br>
             <p class="text-sm">
                 Ordered products that are unavailable in our local stock will be delivered from our wholesale providers.
@@ -108,7 +111,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">5. Order Cancellations</h3>
+            <h3 class="text-2xl font-semibold">5. Order Cancellations</h3>
             <br>
             <p class="text-sm">
                 For online orders/deposits only, the cancellation request must be made within 24 hours of when the order was placed to claim a refund.
@@ -117,7 +120,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">6. Copyright</h3>
+            <h3 class="text-2xl font-semibold">6. Copyright</h3>
             <br>
             <p class="text-sm">
                 All the materials present on our website is copyrighted to us. Any unauthorised use of our material
@@ -128,7 +131,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">7. Privacy Policy</h3>
+            <h3 class="text-2xl font-semibold">7. Privacy Policy</h3>
             <br>
             <p class="text-sm">
                 For details, see our <Link class="text-blue-600 underline" href="/privacy-policy">privacy policy</Link> page.
@@ -137,7 +140,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">8. Guarantees</h3>
+            <h3 class="text-2xl font-semibold">8. Guarantees</h3>
             <br>
             <p class="text-sm">
                 The products we sell on our site are covered by the manufacturer's guarantee.
@@ -162,7 +165,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">9. Third-party website links</h3>
+            <h3 class="text-2xl font-semibold">9. Third-party website links</h3>
             <br>
             <p class="text-sm">
                 Links to third-party websites are provided for your information only
@@ -175,7 +178,7 @@
             <br>
             <br>
 
-            <h3 class="text-2xl">10. Updating terms & conditions</h3>
+            <h3 class="text-2xl font-semibold">10. Updating terms & conditions</h3>
             <br>
             <p class="text-sm">
                 We have the right to alter the terms and conditions on this page when required.
@@ -187,6 +190,7 @@
 <script setup>
 import { Link, Head } from "@inertiajs/vue3"
 import Container from "../Shared/Container.vue"
+import HeaderSpace from "../Shared/HeaderSpace.vue";
 </script>
 
 <style scoped>
