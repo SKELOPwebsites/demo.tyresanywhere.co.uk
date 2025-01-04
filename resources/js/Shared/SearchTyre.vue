@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <div class="flex-1 flex justify-center flex-col bg-white gap-4 lg:gap-8 p-2 sm:p-6 rounded-md shadow-lg reveal">
+        <div class="flex-1 flex justify-center flex-col bg-white gap-4 lg:gap-8 p-2 sm:p-6 rounded-md shadow-lg">
             <img
                 class="w-full lg:px-5"
                 src="/assets/images/main/tyre-size-gd-trn.webp"

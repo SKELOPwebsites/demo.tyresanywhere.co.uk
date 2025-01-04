@@ -129,6 +129,7 @@
 import { Link, useForm, Head } from '@inertiajs/vue3'
 import Container from '../Shared/Container.vue'
 import HeaderSpace from '../Shared/HeaderSpace.vue'
+import { onMounted, onBeforeUnmount } from 'vue';
 
 defineProps({
     errors: Object,
@@ -148,6 +149,46 @@ function submit() {
         preserveScroll: (page) => Object.keys(page.props.errors).length,
     });
 }
+
+
+// Function to inject JSON-LD
+function injectJSONLD() {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+
+    script.text = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "url": "https://tyresanywhere.co.uk/contact-us",
+        "name": "Contact Us - Tyres Anywhere",
+        "description": "Get in touch with Tyres Anywhere for mobile tyre fitting, repairs, and support. We're here to help!",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+44 7442 980101",
+            "contactType": "Customer Service",
+            "areaServed": "GB",
+            "availableLanguage": "English",
+            "availableHours": "Mo-Su 00:00-23:59"
+        }
+    });
+
+    document.head.appendChild(script);
+    return script;
+}
+
+let scriptElement;
+
+onMounted(() => {
+    // Inject JSON-LD when the component is mounted
+    scriptElement = injectJSONLD();
+});
+
+onBeforeUnmount(() => {
+    // Clean up the JSON-LD script when the component is unmounted
+    if (scriptElement) {
+        document.head.removeChild(scriptElement);
+    }
+});
 </script>
 
 <style scoped>

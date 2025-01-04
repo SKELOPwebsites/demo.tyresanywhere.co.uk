@@ -1,16 +1,22 @@
 <template>
-    <div class="flex flex-col justify-center sm:h-auto lg:min-h-screen">
+    <div class="relative flex flex-col justify-center">
 
-        <Container>
+        <div class="hero-background">
             <HeaderSpace />
 
-
-            <div class="mb-4 md:mb-10">
-                <Carousel class="w-full" :location="location" />
+            <div class="mt-4 sm:mt-10">
+                <Carousel :location="location" />
             </div>
 
-            <PostcodeSearch :location="location" />
+            <Container>
+                <div class="mt-4 sm:mt-10">
+                    <PostcodeSearch :location="location" />
+                </div>
+            </Container>
+        </div>
 
+        <Container>
+            
             <TrustSection :location="location" />
 
         </Container>
@@ -25,7 +31,9 @@ import { onMounted, ref } from "vue";
 import Carousel from "./Carousel.vue";
 import HeaderSpace from "./HeaderSpace.vue";
 import PostcodeSearch from "./PostcodeSearch.vue";
-
+// CDE7F0
+// B0C4DE   
+// AFCBD6
 defineProps({
     location: {
         type: String,
@@ -37,6 +45,9 @@ defineProps({
 </script>
 
 <style scoped>
+.hero-background{
+    background: linear-gradient(to bottom, #CDE7F0, #f9fafb);
+}
 
 </style>
 

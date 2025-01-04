@@ -258,6 +258,62 @@ import OurQualities from '../Shared/OurQualities.vue'
 import FAQ from '../Shared/FAQ.vue'
 import HeaderSpace from '../Shared/HeaderSpace.vue'
 import PostcodeSearch from '../Shared/PostcodeSearch.vue'
+import { onMounted, onBeforeUnmount } from 'vue';
+
+// Function to inject JSON-LD
+function injectJSONLD() {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+
+    script.text = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Mobile Tyre Fitting",
+        "description": "Fast and professional mobile tyre fitting services delivered to your doorstep. We come to you—at home, work, or roadside—anywhere in the UK, ensuring safe and hassle-free tyre replacements.",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Tyres Anywhere",
+            "url": "https://tyresanywhere.co.uk",
+            "telephone": "+44 7442 980101",
+            "priceRange": "$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "19 Plumer Road",
+                "addressLocality": "High Wycombe",
+                "addressRegion": "Buckinghamshire",
+                "postalCode": "HP11 2SS",
+                "addressCountry": "GB"
+            },
+            "image": "https://tyresanywhere.co.uk/assets/images/main/tyresanywhere.webp"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "United Kingdom"
+        },
+        "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://tyresanywhere.co.uk/mobile-tyre-fitting"
+        },
+        "serviceType": "Mobile Tyre Fitting Service"
+    });
+
+    document.head.appendChild(script);
+    return script;
+}
+
+let scriptElement;
+
+onMounted(() => {
+    // Inject JSON-LD when the component is mounted
+    scriptElement = injectJSONLD();
+});
+
+onBeforeUnmount(() => {
+    // Clean up the JSON-LD script when the component is unmounted
+    if (scriptElement) {
+        document.head.removeChild(scriptElement);
+    }
+});
 </script>
 
 <style scoped>

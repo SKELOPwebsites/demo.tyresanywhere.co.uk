@@ -24,13 +24,13 @@
             <FAQ />
         </div>
 
-        <div class="mt-20">
+        <div class="sm:mt-20">
             <SearchTyre />
         </div>
 
     </Container>
 
-    <div class="relative bg-[#E3E9F1] sm:mt-20">
+    <div class="relative bg-[#E6F4FA] sm:mt-20">
         <div class="custom-shape-divider-top-1735170425">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
@@ -249,6 +249,7 @@
 
 <script setup>
 import { Link, Head } from '@inertiajs/vue3'
+import { onMounted, onBeforeUnmount } from 'vue';
 import Container from '../Shared/Container.vue'
 import Content from '../Shared/Content.vue'
 import SearchTyre from '../Shared/SearchTyre.vue'
@@ -258,6 +259,58 @@ import FAQ from '../Shared/FAQ.vue'
 import AreasWeCover from '../Shared/AreasWeCover/Main.vue'
 import Hero from '../Shared/Hero.vue'
 import Reviews from '../Shared/Reviews.vue'
+
+
+// Function to inject JSON-LD
+function injectJSONLD() {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+
+    script.text = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Tyres Anywhere",
+        "url": "https://tyresanywhere.co.uk",
+        "logo": "https://tyresanywhere.co.uk/assets/images/main/tyresanywhere.webp",
+        "description": "Tyres Anywhere provides mobile tyre fitting and repair services across the UK. Fast, reliable, and professional, we come to you wherever you are.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+44 7442 980101",
+            "contactType": "Customer Service",
+            "areaServed": "GB",
+            "availableLanguage": "English"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "19 Plumer Road",
+            "addressLocality": "High Wycombe",
+            "addressRegion": "Buckinghamshire",
+            "postalCode": "HP11 2SS",
+            "addressCountry": "GB"
+        },
+        "sameAs": [
+            "https://www.facebook.com/people/Tyres-Anywhere/100094490663380/",
+            "https://www.instagram.com/tyresanywhere/"
+        ]
+    });
+
+    document.head.appendChild(script);
+    return script;
+}
+
+let scriptElement;
+
+onMounted(() => {
+    // Inject JSON-LD when the component is mounted
+    scriptElement = injectJSONLD();
+});
+
+onBeforeUnmount(() => {
+    // Clean up the JSON-LD script when the component is unmounted
+    if (scriptElement) {
+        document.head.removeChild(scriptElement);
+    }
+});
 </script>
 
 <style scoped>
