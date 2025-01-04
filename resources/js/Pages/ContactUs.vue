@@ -158,17 +158,41 @@ function injectJSONLD() {
 
     script.text = JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "ContactPage",
-        "url": "https://tyresanywhere.co.uk/contact-us",
-        "name": "Contact Us - Tyres Anywhere",
+        "@type": "LocalBusiness",
+        "name": "Tyres Anywhere",
+        "url": "https://tyresanywhere.co.uk",
+        "telephone": "+44 7442 980101",
         "description": "Get in touch with Tyres Anywhere for mobile tyre fitting, repairs, and support. We're here to help!",
+        "image": "https://tyresanywhere.co.uk/assets/images/showcase/gallary/mobile-tyre-fitting-3.webp",
+        "priceRange": "$$",
         "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+44 7442 980101",
             "contactType": "Customer Service",
             "areaServed": "GB",
             "availableLanguage": "English",
-            "availableHours": "Mo-Su 00:00-23:59"
+            "hoursAvailable": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "23:59"
+            }
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "19 Plumer Road",
+            "addressLocality": "High Wycombe",
+            "addressRegion": "Buckinghamshire",
+            "postalCode": "HP11 2SS",
+            "addressCountry": "GB"
         }
     });
 
