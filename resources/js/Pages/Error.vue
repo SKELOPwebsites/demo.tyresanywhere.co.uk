@@ -1,7 +1,7 @@
 <template>
     <Head>
-        <title></title>
-        <meta name="description" content="">
+        <title>{{ title }}</title>
+        <meta name="description" :content="description" />
     </Head>
 
     <HeaderSpace />
@@ -10,7 +10,7 @@
         <div class="font-rubik w-full flex flex-col lg:flex-row gap-8">
             <div class="flex-shrink-0 flex flex-col items-center justify-center text-center gap-8">
                 <div>
-                    <h1 class="text-6xl font-bold text-secondary mb-2mj b">{{ title }}</h1>
+                    <h1 class="text-6xl font-bold text-secondary mb-2mj b" role="alert">{{ title }}</h1>
                     <h2 class="text-xl font-light">{{ description }}</h2>
                 </div>
                 <div>
