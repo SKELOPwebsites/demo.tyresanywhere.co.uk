@@ -16,8 +16,8 @@
         <HeaderSpace />
         
         <div class="flex md:flex-row flex-col md:pt-12 sm:pt-6 xl:h-[340px] lg:h-[300px] md:h-[280px]">
-            <div class="xl:w-[70%] md:w-[65%] w-full">
-                <div class="relative overflow-hidden md:h-full sm:h-[300px] h-[200px]">
+            <div class="w-full">
+                <div class="relative overflow-hidden md:h-full sm:h-[300px] h-[200px] rounded-t-xl shadow-md">
                     <img
                         src="/assets/images/showcase/gallary/mobile-tyre-fitting-2.webp"
                         srcset="/assets/images/showcase/gallary/mobile-tyre-fitting-2.webp 1080w,
@@ -27,28 +27,28 @@
                         sizes="(min-width: 1536px) 1280px, (min-width: 1280px) 1152px, (min-width: 1024px) 896px, 100vw"
                         alt="Mobile Tyre Fitting"
                     >
-                    <div class="absolute left-0 right-0 xl:top-24 xl:translate-y-0 top-1/2 -translate-y-1/2 pt-5 pb-5 text-white text-center">
-                        <h1 class="md:text-4xl sm:text-3xl text-2xl font-bold text-center mb-1">Mobile Tyre Fitting</h1>
-                        <p class="sm:text-sm text-xs text-center">Same day service for emergencies & non-emergencies.</p>
+                    <div class="absolute left-0 right-0 xl:top-24 xl:translate-y-0 top-1/2 -translate-y-1/2 p-8 sm:p-12 text-white">
+                        <h1 class="lg:text-5xl md:text-4xl text-3xl font-bold mb-1">Mobile Tyre Fitting</h1>
+                        <p class="sm:text-xl font-light text-gray-200">Same day service for emergencies & non-emergencies.</p>
                     </div>
                 </div>
             </div>
-            <div class="xl:w-[30%] md:w-[35%] w-full">
-                <SearchTyre />
-            </div>
         </div>
+
+        <PostcodeSearch />
+
     </Container>
 
     <Container>
         <Content>
-            <div class="xl:px-11 sm:px-8 px-4">
-                <h2 class="font-montserrat font-extrabold md:text-4xl sm:text-2xl text-xl mb-2 uppercase">Mobile Tyre Fitting Service</h2>
-                <h2 class="md:text-xl sm:text-lg text-base mb-10">Are you looking for emergency mobile tyre fitting for your vehicle?</h2>
+            <div class="font-rubik">
+                <h2 class="font-bold sm:text-4xl text-3xl mb-2">Mobile Tyre Fitting Service</h2>
+                <h2 class="sm:text-2xl text-xl text-gray-800 font-light mb-10">Are you looking for emergency mobile tyre fitting for your vehicle?</h2>
 
                 <div class="lg:grid grid-cols-12 gap-y-12 xl:gap-x-4 lg:gap-x-8 lg:space-y-0 sm:space-y-12 space-y-6 lg:mt-8 mt-4 sm:text-base text-sm">
-                    <div class="col-span-5 lg:p-4">
+                    <div class="col-span-5 ">
                         <img
-                            class="w-full object-cover"
+                            class="w-full object-cover rounded-lg shadow-lg"
                             src="/assets/images/pages/mobile-tyre-fitting/mobile-tyre-fitting-van-375.webp"
                             srcset="/assets/images/pages/mobile-tyre-fitting/mobile-tyre-fitting-van.webp 640w,
                                     /assets/images/pages/mobile-tyre-fitting/mobile-tyre-fitting-van-500.webp 500w,
@@ -57,27 +57,27 @@
                             alt="Our emergency services van"
                         >
                     </div>
-                    <div class="col-span-7 lg:p-4 space-y-3">
-                        <h3 class="sm:text-2xl text-xl font-semibold">Why mobile tyre fitting?</h3>
-                        <p>
+                    <div class="col-span-7 space-y-3">
+                        <h3 class="sm:text-3xl text-2xl font-semibold">Why mobile tyre fitting?</h3>
+                        <p class="font-light sm:text-lg">
                             Do you need to install a new set of tyres but unable to visit a garage?
                         </p>
-                        <p>
+                        <p class="font-light sm:text-lg">
                             If yes then look no further. At Tyres Anywhere, we strive to provide safe and reliable
                             emergency mobile tyre services whether that is to repair your punctured tyre or to fit a new tyre.
                             We offer quality and affordable <b>mobile tyre fitting</b> nationwide, and stock a wide range of tyre sizes so we are always able to help.
                         </p>
-                        <p>
+                        <p class="font-light sm:text-lg">
                             Our mobile tyre technicians are fully equipped with the latest knowledge and machinery to conduct prompt mobile tyre services, even in situations of urgency.
                             We are open 24 hours a day, 7 days a week so we are always able to assist when you need us the most.
                         </p>
                     </div>
 
                     <!--                    Why choose Tyres Anywhere for your tyre needs?-->
-                    <div class="col-span-12 lg:p-4">
-                        <h3 class="sm:text-2xl text-xl font-semibold">Why choose Tyres Anywhere for your tyre needs?</h3>
+                    <div class="col-span-12">
+                        <h3 class="sm:text-3xl text-2xl font-semibold">Why choose Tyres Anywhere for your tyre needs?</h3>
 
-                        <div class="flex flex-col space-y-4 mt-6">
+                        <div class="flex flex-col space-y-4 mt-6 font-light sm:text-lg">
                             <div class="flex space-x-2.5">
                                 <svg class="w-5 h-5 fill-secondary-500 shrink-0" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.41 0l-.69.72-2.78 2.78-.81-.78-.72-.72-1.41 1.41.72.72 1.5 1.5.69.72.72-.72 3.5-3.5.72-.72-1.44-1.41z" transform="translate(0 1)"></path>
@@ -126,44 +126,44 @@
                         </div>
                     </div>
 
-                    <div class="col-span-7 lg:p-4 space-y-3">
-                        <h3 class="sm:text-2xl text-xl font-semibold">24 Hour Assistance</h3>
-                        <p>
+                    <div class="col-span-7 space-y-3">
+                        <h3 class="sm:text-3xl text-2xl font-semibold">24 Hour Assistance</h3>
+                        <p class="font-light sm:text-lg">
                             Our powerful 24 hour service means that there is always a solution for your tyre problems - <span class="font-semibold">no matter when or where</span>.
                         </p>
-                        <p>
+                        <p class="font-light sm:text-lg">
                             Whether it's a flat tyre in the middle of the night, a blowout during your commute or a puncture in a remote area, we are always ready to assist.
                             Our team of experienced mobile tyre technicians is on standby around the clock, ensuring you always have access to fast and reliable service at any hour
                             of the day or night.
                         </p>
-                        <p>
+                        <p class="font-light sm:text-lg">
                             This is what makes our service truly unique. <span class="font-semibold">Your safety is our top priority</span>, and our emergency mobile tyre services are designed to ensure just that.
                             We don't just assist when you're stranded on the road; we also help keep traffic flowing smoothly by resolving tyre issues quickly and efficiently,
                             minimizing disruptions.
                         </p>
                     </div>
-                    <div class="col-span-5 lg:p-4">
+                    <div class="col-span-5">
                         <img
-                            class="w-full"
+                            class="w-full rounded-lg shadow-lg object-cover"
                             src="/assets/images/pages/mobile-tyre-fitting/24-hour-assistance.webp"
                             alt="Our emergency services van"
                         >
                     </div>
 
                     <!--                    Book an appointment for mobile tyre fitting today-->
-                    <div class="col-span-12 lg:p-4 space-y-4">
-                        <h3 class="sm:text-2xl text-xl font-semibold">Book an appointment for mobile tyre fitting today</h3>
-                        <p>
+                    <div class="col-span-12 space-y-4">
+                        <h3 class="sm:text-3xl text-2xl font-semibold">Book an appointment for mobile tyre fitting today</h3>
+                        <p class="font-light sm:text-lg">
                             Experiencing a flat tyre can be incredibly frustrating, and we understand how it can disrupt your day. Not only does it consume valuable time,
                             but it can also create a major hassle when you’re already on a tight schedule, possibly making you late for work or other important commitments.
                         </p>
-                        <p>
+                        <p class="font-light sm:text-lg">
                             That’s why we've designed our booking system to be as straightforward as possible, giving you peace of mind when you need it most.
                             With just a few clicks or a quick call, you can book our emergency mobile tyre fitting service,
                             and we’ll handle the rest – getting you back on the road quickly and hassle-free.
                         </p>
 
-                        <ol class="list-decimal pl-5 space-y-1">
+                        <ol class="list-decimal pl-5 space-y-1 font-light sm:text-lg">
                             <li>
                                 <span class="font-medium">Use our tools above:</span>
                                 Enter your full tyre size and your postcode to search our inventory for your tyres
@@ -182,7 +182,7 @@
                             </li>
                         </ol>
 
-                        <p>
+                        <p class="font-light sm:text-lg">
                             Alternatively, you can also book an appointment with us on the phone. This is highly recommended for emergencies and tyre repairs.
                         </p>
 
@@ -191,18 +191,18 @@
                                 <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
                                 <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
                             </svg>
-                            <span>Need mobile tyre services ASAP?, please call us on <a class="text-blue-600 underline" href="tel:07442980101">07442 980101</a></span>
+                            <span class="font-light sm:text-lg">Need mobile tyre services ASAP?, please call us on <a class="text-blue-600 underline" href="tel:07442980101">07442 980101</a></span>
                         </p>
                     </div>
 
 <!--                    What can I expect on the day of the tyre fitting?-->
-                    <div class="col-span-12 lg:p-4 space-y-4">
-                        <h3 class="sm:text-2xl text-xl font-semibold">What can I expect on the day of the tyre fitting?</h3>
-                        <p>
+                    <div class="col-span-12 space-y-4">
+                        <h3 class="sm:text-3xl text-2xl font-semibold">What can I expect on the day of the tyre fitting?</h3>
+                        <p class="font-light sm:text-lg">
                             When you book a mobile tyre fitting with us, we aim to make the process as smooth and convenient as possible. Here’s what you can expect on the day:
                         </p>
 
-                        <ol class="list-decimal pl-5 space-y-3">
+                        <ol class="list-decimal pl-5 space-y-3 font-light sm:text-lg">
                             <li>
                                 <span class="font-medium">Confirmation of Appointment:</span>
                                 You’ll receive a confirmation message or call with the technician’s expected arrival time. If there are any delays, you’ll be notified promptly.
@@ -236,7 +236,7 @@
                     </div>
 
 <!--                    FAQ-->
-                    <div class="col-span-12 lg:p-4">
+                    <div class="col-span-12">
                         <FAQ />
                     </div>
                 </div>
@@ -244,9 +244,7 @@
         </Content>
     </Container>
 
-    <Container>
-        <OurServices class="border-t"/>
-    </Container>
+    
     <OurQualities />
 </template>
 
@@ -259,6 +257,63 @@ import OurServices from '../Shared/OurServices.vue'
 import OurQualities from '../Shared/OurQualities.vue'
 import FAQ from '../Shared/FAQ.vue'
 import HeaderSpace from '../Shared/HeaderSpace.vue'
+import PostcodeSearch from '../Shared/PostcodeSearch.vue'
+import { onMounted, onBeforeUnmount } from 'vue';
+
+// Function to inject JSON-LD
+function injectJSONLD() {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+
+    script.text = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Mobile Tyre Fitting",
+        "description": "Fast and professional mobile tyre fitting services delivered to your doorstep. We come to you—at home, work, or roadside—anywhere in the UK, ensuring safe and hassle-free tyre replacements.",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Tyres Anywhere",
+            "url": "https://tyresanywhere.co.uk",
+            "telephone": "+44 7442 980101",
+            "priceRange": "$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "19 Plumer Road",
+                "addressLocality": "High Wycombe",
+                "addressRegion": "Buckinghamshire",
+                "postalCode": "HP11 2SS",
+                "addressCountry": "GB"
+            },
+            "image": "https://tyresanywhere.co.uk/assets/images/main/tyresanywhere.webp"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "United Kingdom"
+        },
+        "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://tyresanywhere.co.uk/mobile-tyre-fitting"
+        },
+        "serviceType": "Mobile Tyre Fitting Service"
+    });
+
+    document.head.appendChild(script);
+    return script;
+}
+
+let scriptElement;
+
+onMounted(() => {
+    // Inject JSON-LD when the component is mounted
+    scriptElement = injectJSONLD();
+});
+
+onBeforeUnmount(() => {
+    // Clean up the JSON-LD script when the component is unmounted
+    if (scriptElement) {
+        document.head.removeChild(scriptElement);
+    }
+});
 </script>
 
 <style scoped>

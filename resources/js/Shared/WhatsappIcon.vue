@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed bottom-4 right-4 z-40">
+    <div class="fixed bottom-4 right-4 z-50 whatsapp-widget">
 
         <button id="whatsapp-button" @click="textOpen = !textOpen" :class="{ 'translate-y-24': textOpen }" class="hover:scale-110 transition-transform transform duration-300">
             <svg
@@ -16,16 +16,16 @@
         <Transition>
             <div
                 v-show="textOpen"
-                class="z-50 absolute -right-0 -translate-y-full bg-white border sm:w-80 w-64 rounded-2xl overflow-hidden shadow-lg "
+                class="font-rubik z-50 absolute -right-0 -translate-y-full bg-white border sm:w-80 w-64 rounded-2xl overflow-hidden shadow-lg "
             >
                 <div class="flex items-center relative p-4">
                     <div class="size-14 rounded-full relative">
                         <img src="/android-chrome-192x192.png" alt="VelocityTech" class="w-full h-full object-cover">
                         <div class="absolute size-2 bg-green-500 absolute bottom-0.5 right-0.5 rounded-full animate-pulse"></div>
                     </div>
-                    <div class="flex flex-col ml-4">
-                        <span class="font-medium">{{ name }}</span>
-                        <span class="text-sm">Typically replies within 15 minutes</span>
+                    <div class="flex flex-col ml-2">
+                        <span class="font-semibold">{{ name }}</span>
+                        <span class="text-sm font-light">Typically replies within 15 minutes</span>
                     </div>
 
                     <button @click="textOpen = false" class="absolute top-2 right-2 text-gray-400 hover:text-gray-300">
@@ -37,7 +37,7 @@
 
                 <div class="bg-whatsapp px-5 pt-5 pb-40">
                     <div class="relative py-1.5 px-3.5 bg-white rounded-b-full rounded-tr-full">
-                        <span class="font-medium text-gray-800">How Can We Help?</span>
+                        <span class="text-gray-800">How can we help?</span>
                         <span class="text-xs ml-3 text-gray-400">{{ time }}</span>
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="9" height="17" viewBox="0 0 9 17" fill="currentColor" class="absolute top-0 -left-[9px] text-white">
@@ -172,4 +172,5 @@ watch(message, () => {
 .custom-scrollbar::-webkit-scrollbar-track {
     background: transparent; /* Color of the scrollbar track */
 }
+
 </style>

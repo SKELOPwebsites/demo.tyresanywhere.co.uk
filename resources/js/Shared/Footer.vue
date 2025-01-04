@@ -9,7 +9,7 @@
 
             <Container>
 
-                <div class="text-center sm:text-left flex flex-col md:flex-row justify-between gap-8 md:gap-6 px-8 pt-4 pb-6">
+                <div class="text-center sm:text-left flex flex-col md:flex-row justify-between gap-8 md:gap-6 pt-4 pb-8">
 
                     <div class="flex-[2] mr-0 sm:mr-20">
                         <h4 class="uppercase text-3xl tracking-wide mb-4 text-white font-bold">Tyres Anywhere</h4>
@@ -61,7 +61,7 @@
                 </div>
             </Container>
 
-            <Container class="text-center sm:text-left text-xs text-gray-500 px-8 py-6 mx-auto">
+            <Container class="text-center text-xs text-gray-500 px-8 py-6 mx-auto">
                 <p>© {{ new Date().getFullYear() }} Tyres Anywhere LTD. All Rights Reserved.</p>
                 <p>Website by: <a class="hover:underline text-gray-400" href="https://skelop.com" target="_blank" rel="nofollow">SKELOP Website Design &amp; Development</a></p>
             </Container>

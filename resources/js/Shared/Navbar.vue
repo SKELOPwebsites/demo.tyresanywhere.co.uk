@@ -55,7 +55,7 @@
                     <li>
                         <NavLink href="/contact-us" title="Contact Us">Contact Us</NavLink>
                     </li>
-                    <li class="hidden lg:block">
+                    <li v-if="showFAQLink" class="hidden lg:block">
                         <NavLink href="#faq" title="FAQ">FAQ</NavLink>
                     </li>
                 </ul>
@@ -73,7 +73,7 @@
 
         <transition name="mobile-nav">
             <div v-show="mobileNavShow" class="md:hidden block mobile-nav font-rubik w-72 fixed top-0 right-0 z-50">
-                <div class="relative h-screen overflow-y-scroll">
+                <div class="relative h-screen">
                     <div class="w-full flex border-b items-center justify-between pr-4 h-14 my-4">
                         <NavLinkMob href="/" component="Index" class="flex items-start">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
@@ -108,7 +108,7 @@
                         <NavLinkMob href="/contact-us" component="ContactUs" title="Contact Us">Contact Us</NavLinkMob>
                     </div>
 
-                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-10">
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-16">
                         <a class="whitespace-nowrap flex items-center justify-center text-white bg-wheelfit-300 rounded-full px-6 py-3 shadow-lg text-base lg:text-lg font-medium z-10 hover:bg-wheelfit-400 hover:scale-105 transition-all duration-300" href="tel:07442980101" title="Phone Number">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 lg:h-6 lg:w-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z"/></svg>
                             07442 980101
@@ -122,7 +122,7 @@
 </template>
 
 <script setup>
-import {onMounted, ref, watch} from "vue"
+import { onBeforeUnmount, onMounted, ref, watch} from "vue"
 import { Link, usePage } from "@inertiajs/vue3";
 import NavbarDropdown from "./NavbarDropdown.vue"
 import Container from "./Container.vue"
@@ -160,6 +160,17 @@ function setSliding() {
     }, 500)
 }
 
+const showFAQLink = ref(false);
+
+// Function to check if the #faq element exists on the current page (fix this)
+function checkFAQAvailability() {
+  const faqElement = document.querySelector("#faq");
+  showFAQLink.value = !!faqElement;
+}
+
+onMounted(() => {
+  checkFAQAvailability();
+});
 
 </script>
 

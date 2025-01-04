@@ -15,37 +15,6 @@
     <!-- Preload the favicon for performance -->
     <link rel="preload" as="image" href="/favicon-32x32.png">
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Tyres Anywhere",
-        "image": "https://tyresanywhere.co.uk/assets/images/showcase/gallary/mobile-tyre-fitting-1.webp",
-        "url": "https://tyresanywhere.co.uk",
-        "telephone": "+44 7442 980101",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "19 Plumer Road",
-            "addressLocality": "High Wycombe",
-            "addressRegion": "Buckinghamshire",
-            "postalCode": "HP11 2SS",
-            "addressCountry": "GB"
-        },
-        "openingHours": "Mo-Su 00:00-23:59",
-        "priceRange": "$",
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "51.62956863163383",
-            "longitude": "-0.7653059946473589"
-        },
-        "serviceArea": {
-            "@type": "Place",
-            "name": "Beaconsfield, High Wycombe, and surrounding areas"
-        }
-    }
-    </script>
-
-
     <!-- Google tag (gtag.js) -->
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-0BDH6DJNYY"></script>
     <script defer>
