@@ -1,7 +1,7 @@
 <template>
     <div class="overflow-hidden flex items-center justify-center">
         <div class="flex flex-wrap-reverse md:flex-nowrap px-10 gap-4 md:gap-0 items-center justify-between w-full h-full max-w-6xl">
-            <div class="overflow-hidden relative w-full md:w-1/2 h-full flex flex-col text-center md:text-left">
+            <div class="relative w-full md:w-1/2 h-full flex flex-col text-center md:text-left">
                 <!-- Text Swiper -->
                 <Swiper
                 :modules="[EffectFade, Navigation, Controller, Autoplay]"
@@ -306,6 +306,8 @@ defineProps({
 
     flex-shrink: 0;
     height: 100%;
+
+    overflow: hidden;
 }
 
 .image-slide {

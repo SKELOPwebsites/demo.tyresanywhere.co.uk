@@ -64,12 +64,17 @@ Route::get('/sitemap', function () {
         'areas' => $areas,
     ]);
 });
-Route::get('/locations/{area:slug}', function (CoveredAreas $area) {
+
+Route::get('/locations/{area:slug}', function (CoveredAreas $area = null) {
+    if (!$area) {
+        abort(404); // Return a proper 404 response if the location is missing
+    }
+
     return Inertia::render('Location', [
         'location' => ucwords($area->area),
         'slug' => $area->slug,
     ]);
-});
+})->where('area', '[A-Za-z0-9-]+');
 
 Route::get('/contact-us', [ContactController::class, 'index']);
 Route::post('/contact-us', [ContactController::class, 'store']);
